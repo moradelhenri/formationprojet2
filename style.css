@@ -1,0 +1,477 @@
+
+  
+  body{width: 1280px;
+    height: 100vh;
+ margin: 0;
+ padding: 0;
+  font-family:"Raleway:wght@500 ", 'Raleway', sans-serif;
+  forced-color-adjust: black;
+  font-weight: color black;
+  }
+  header{ display:grid; 
+    max-width: 1350px;
+    height:60px;
+    margin-left: 10px;
+   grid-template-rows: 30px 30px;
+   grid-template-columns:repeat( 6, 200px);
+  }
+  .logo{ margin-top:-10px ;
+  
+  }
+  .housing{  grid-area: 1/4;
+   margin-left: 150px;
+  font-size: 20px;
+  margin-top: 10px;
+  }
+  .activity{grid-area: 1/5;
+    margin-left: 150px;
+    margin-top: 10px;
+    font-size: 20px;     
+  }
+    
+  .register{grid-area: 1/6;
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 20px; 
+  }
+    
+  nav{ width: 900px;
+    height: 140px;
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 10px;    
+  
+}    /*h1 et aside class à prévoir
+         pour petite resolution*/
+        
+ form{ margin-top: 10px;
+
+ }  
+         /*Rechercher  prevoir loupe pour media tel */ 
+#plan{ background-color:  #0065FC; 
+  border-bottom-right-radius: 10px;
+  border-top-right-radius:10px; 
+   font-size: 20px;
+ } 
+ .canebiere{ font-size: 20px;
+ 
+ }                       /*icone réprésentant une goutte*/
+  .eau{border-bottom-left-radius: 10px;
+  border: solid black 1px;
+  padding-top: 5px;
+padding-bottom: 3px;
+border-top-left-radius: 10px;
+  background-color:#F2F2F2;
+
+}                                   /*filtres*/
+        
+ 
+  .headernav{
+  width: 850px;
+  height: 180px;
+  display:flex ;
+  flex-direction: row;
+  align-items:baseline;  
+  margin-left: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+   
+}
+ 
+.survolfilters,a:hover{
+cursor:pointer;
+background-color:#f4f6f7;
+
+transition-duration: 0,05;
+}
+  .filters{font-weight: bold;
+ 
+  }
+ .silver{margin-left:20px;
+  width: 30px;
+  height: 30px; 
+padding-top: 10px;
+padding-left: 10px;
+margin-top:30px ;
+border-radius: 2rem; 
+background-color:#DEEBFF;
+
+}
+.eco{
+border: 2px solid  #d9d9d9;
+border-radius: 2rem;
+font-weight:bold;
+margin-left: -40px;
+width: 120px;
+padding-left:40px;
+padding-top:10px ;
+padding-bottom:10px;
+text-align: center;
+
+}
+
+  .family{
+  width:40px;
+  height: 30px;
+ margin-left: 20px;
+ text-align: center;
+margin-top:10px;
+padding-top: 10px;
+border-radius: 2rem;
+background-color:#DEEBFF ;
+}
+  
+.everybody {border: 2px solid  #d9d9d9;
+  border-radius: 2rem;  
+  font-weight:bold;
+  margin-left: -40px;
+  width: 120px;
+  padding-left:40px;
+  padding-top:10px ;
+  padding-bottom:10px;
+  text-align: center;
+
+}
+
+.heart{width:40px;
+  height: 30px;
+ margin-left: 20px;
+ text-align: center;
+margin-top:10px;
+padding-top: 10px;
+border-radius: 2rem;
+background-color:#DEEBFF ;
+}
+
+.romantic{border: 2px solid  #d9d9d9;
+  border-radius: 2rem;  
+  font-weight:bold;
+  margin-left: -40px;
+  width: 120px;
+  padding-left:40px;
+  padding-top:10px ;
+  padding-bottom:10px;
+  text-align: center;
+
+}
+.dog{width:40px;
+  height: 30px;
+ margin-left: 20px;
+ text-align: center;
+margin-top:10px;
+padding-top: 10px;
+border-radius: 2rem; 
+flex-wrap: wrap;
+background-color:#DEEBFF ;
+
+}
+.animals{border: 2px solid  #d9d9d9;
+  border-radius: 2rem;   
+  font-weight:bold;
+  margin-left: -40px;
+  width: 170px;
+  padding-left:40px;
+  padding-top:10px ;
+  padding-bottom:10px;
+  text-align: center;
+   margin-right: 10px;      
+                      /*image "i" class aside*/
+  }       
+            
+ .aside{
+ margin-left: 5px;
+ border: 2px solid  #d9d9d9;
+    border-radius: 2rem;
+ width: 30px;
+ height: 30px;
+ background-color: #fff;
+ padding-bottom: 5px;
+  align-self:center;
+}
+
+.info{font-size:15px;
+  align-self: center;
+ 
+margin-left: 10px;
+}
+    
+   
+  
+       /*section principal composé de 9 logement*/
+section{display:inline-grid;
+  grid-template-columns: repeat( 3, 230px );
+  grid-template-rows:50px 150px 90px 40px 30px 150px 90px 30px 80px; 
+   column-gap: 30px;
+   background-color:#F2F2F2;
+   margin-left: 10px;padding: 20px;
+   padding-bottom: 38px;
+   border-radius: 15px;
+    margin-top: 80px;
+  }
+
+.hebergement,h2{ width: 300px;    /* hebergement a marseille*/
+   display: inline;}
+
+.sectioncannebiere{ border:1px black ;
+  width: 225px;
+  height: 280px;
+background-color:  #fff;
+ grid-area:2/1; 
+ border-radius: 15px;
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-top: 3px
+
+}
+.auberge{background-color:   #fff;
+ border-top-left-radius: 10px;  /*image auberge*/
+border-top-right-radius: 10px;
+padding-top: 3px;
+
+}
+
+a:link{ text-decoration: none;
+
+} 
+.sectionlamer{width:225px;
+  height: 280px;
+background-color:  #fff;
+grid-area: 6/1;
+padding-left: 5px;
+ padding-right: 5px;
+ padding-top: 5px;
+ border-radius: 15px;
+}
+.hotelamer{
+  background-color:  #fff;   /*image*/
+
+}
+.sectionport{width:225px;
+  height: 280px;
+background-color:  #fff;
+padding-left: 5px;
+ padding-right: 5px;
+ padding-top: 5px;
+ border-radius: 15px;
+grid-area:2/2 ;
+}
+
+.hotelport{background-color:  #fff; /*image*/
+padding-top: 3px;
+}
+
+
+.sectionpanier{width:225px;
+  height: 280px;
+background-color:  #fff;
+ padding-top: 5px;
+ padding-left: 5px;
+ 
+ border-radius: 15px;
+grid-area: 6/2;
+}
+
+.aubergepanier{display: flex;
+border-top-right-radius: 10px;/*image*/
+background-color:  #fff;
+height: 154px;
+width: 225px;
+}
+
+.sectionmouettes{width:225px;
+  height: 280px;
+background-color: #fff;
+grid-area:2/3 ;
+ padding-top: 5px;
+ border-radius: 15px;
+padding-left: 5px;
+padding-right: 5px;
+}
+.hotelmouettes{display: flex;/*image*/
+  width: 225px;
+padding-right: 10px;
+}
+
+.sectionamina{width:225px;
+  height: 280px;
+background-color: #fff;
+ grid-area: 6/3;
+ padding-top: 5px;
+ border-radius: 15px;
+padding-left: 5px;
+padding-right: 7px;
+
+}
+aside{ grid-area: 10/1;
+font-size: 20px;
+
+}
+
+/* section 2 =3 logement "populaire" */
+.populaire{display: inline-grid;
+ height: 740px;
+ width: 360px;
+grid-template-rows: 50px 210px 30px 210px 30px 210px;
+grid-template-columns: 120px 200px;
+margin-top: -20px;
+padding:20px;
+padding-bottom: 30px;
+background-color:#F2F2F2;
+margin-left: 530px;
+border-radius: 15px;
+}
+
+.lesplus{ width: 350px;
+  height: 50px; 
+   
+
+}
+.anchor{ display:flex;
+  width: 30px;
+  height: 30px;
+  grid-area: 1/2;
+margin-left: 120px; 
+background-color:#F2F2F2 ;           
+                     /*hotel du matin*/
+}
+.sectiondumatin{width: 350px;
+  height: 210px;
+  background-color: #fff;
+   border-radius: 15px;
+  padding: 5px;
+  
+                      /*image hotel*/
+}
+.matin{display:flex;
+  width: 120px; 
+  height: 210px;
+}
+
+.soleil{ 
+margin-left:180px;
+margin-top:-200px;
+
+}  /*paragraphe*/
+.nuitsoleil{margin-left: 180px;
+  
+}
+.starmatin{width: 150px;
+  height: 40px;  
+ margin-left: 180px;
+margin-top:50px;
+
+}
+               /*section hotel de l'eau*/
+.section_eau{width: 350px;
+  height: 210px;
+  margin-bottom:10px;
+  background-color: #fff;
+  grid-area: 4/1;
+  border-radius: 15px;
+  padding: 5px;  
+}
+         /*image*/
+.eau{width: 115px; 
+  height: 210px;
+ border-color: white;
+margin-top: -7px;
+}
+
+.hotel_eau{margin-left: 180px;
+  margin-top: -200px;
+}
+        
+.nuit_eau{margin-left: 180px;
+
+}
+.star_eau{width: 150px;
+  height: 40px;  
+ margin-left: 180px;
+margin-top:50px;
+ 
+}
+.section_bleu{width: 350px;
+  height: 210px;
+  border-radius: 15px;
+  padding: 5px; background-color: #fff; 
+  grid-area: 6/1;
+}                  /*image*/
+.bleu{height: 210px;
+
+}
+
+.hotel_bleu{
+   margin-left:180px;
+   margin-top:-190px;
+}
+.nuit_bleu{ margin-left:180px;
+  
+}
+.star_bleu{width: 150px;
+  height: 40px;  
+ margin-left: 180px;
+margin-top:50px;
+
+}
+
+a:hover{color: none;
+}
+article{display:inline-grid;  /*partie activité à marseille*/
+  width: 1210px;
+  height: 580px;
+background-color: #fff;
+margin-top: 50px;
+margin-left: 10px;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows:50px 190px 30px 30px 30px
+190px 50px;
+column-gap:20px;
+
+ }                                /*activités à marseille*/
+.image_port{                   /*column_1*/
+  margin-top: 22px;}
+                             
+                                 /*column_2*/
+.image_fort{margin-top: 50px;}
+
+.pomegue{margin-left: 15px;}
+
+.image_frioul{margin-top: 73px;
+
+}
+.frioul{ margin-left:15px ;
+
+}
+
+.image_calanque{  margin-top: 50px;           /*column_3*/
+
+}
+.parc{margin-left:15px ;
+
+}                           /*column_4*/
+.image_dame{margin-top: 50px;
+
+} 
+.notre{ margin-left: 15px;
+
+}
+
+.image_longchamp{margin-top: 40px;
+
+}
+.lonchamp{ margin-left:15px;
+}
+
+footer{display: grid;
+ width: 1210px;
+ height: 130px;
+grid-template-columns :repeat(3, 1fr);
+margin-top: 50px;
+grid-template-rows: auto;
+background-color:#F2F2F2;
+margin-left: 10px;
+cursor: alias;
+}
+h3{font: 300 black;
+font-size: color black;
+}
