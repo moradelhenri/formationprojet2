@@ -158,11 +158,11 @@ background-color:#DEEBFF ;
   height: 30px;
  margin-left: 20px;
  text-align: center;
-margin-top:10px;
+margin: top 25px;
 padding-top: 10px;
 border-radius: 2rem; 
 flex-wrap: wrap;
-background-color:#DEEBFF ;
+background-color:#DEEBFF;
 
 }
 .animals{border: 2px solid  #d9d9d9;
@@ -330,7 +330,7 @@ border-radius: 15px;
   width: 30px;
   height: 30px;
   grid-area: 1/2;
-margin-left: 120px; 
+margin-left: 170px; 
 background-color:#F2F2F2 ;           
                      /*hotel du matin*/
 }
@@ -422,44 +422,58 @@ article{display:inline-grid;  /*partie activité à marseille*/
 background-color: #fff;
 margin-top: 50px;
 margin-left: 10px;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows:50px 190px 30px 30px 30px
+grid-template-columns: repeat(4, 1fr);      
+grid-template-rows:50px 190px 30px 30px 30px 
 190px 50px;
 column-gap:20px;
-
+border: 1px solid #F2F2F2 ;
+box-shadow:black;
+border-radius: 10px;
  }                                /*activités à marseille*/
 .image_port{                   /*column_1*/
-  margin-top: 22px;}
-                             
-                                 /*column_2*/
-.image_fort{margin-top: 50px;}
+  margin-top: 22px;
+  border: 2px solid #F2F2F2;
+  box-shadow:black;
+  border-radius: 10px;                            
+    }                                                      /*column_2*/
+.image_fort{margin-top: 50px;
+  border: 2px solid #F2F2F2;
+  box-shadow:black;
+}
 
-.pomegue{margin-left: 15px;}
+.pomegue{margin-left: 15px;
+}
 
 .image_frioul{margin-top: 73px;
-
+  border: 2px solid #F2F2F2;
+  box-shadow:black;
 }
 .frioul{ margin-left:15px ;
 
 }
 
 .image_calanque{  margin-top: 50px;           /*column_3*/
-
+  border: 2px solid #F2F2F2;
+  box-shadow:black;
 }
 .parc{margin-left:15px ;
-
+  border: 2px solid #F2F2F2;
+  box-shadow:black;
 }                           /*column_4*/
 .image_dame{margin-top: 50px;
-
+  border: 2px solid #F2F2F2;
+  box-shadow:black;
 } 
 .notre{ margin-left: 15px;
-
+  
 }
 
 .image_longchamp{margin-top: 40px;
-
+  border: 2px solid #F2F2F2;
+  box-shadow:black;
 }
 .lonchamp{ margin-left:15px;
+ font-style:  black;
 }
 
 footer{display: grid;
