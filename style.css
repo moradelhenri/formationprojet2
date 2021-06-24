@@ -4,17 +4,20 @@
     height: 100vh;
  margin: 0;
  padding: 0;
-  font-family:"Raleway:wght@500 ", 'Raleway', sans-serif;
-  forced-color-adjust: black;
-  font-weight: color black;
-  }
+  font-family:'Raleway'," sans-serif"
+ 
+ }
+  
   header{ display:grid; 
     max-width: 1350px;
     height:60px;
     margin-left: 10px;
    grid-template-rows: 30px 30px;
    grid-template-columns:repeat( 6, 200px);
+ 
+
   }
+   
   .logo{ margin-top:-10px ;
   
   }
@@ -22,18 +25,28 @@
    margin-left: 150px;
   font-size: 20px;
   margin-top: 10px;
-  }
-  .activity{grid-area: 1/5;
+  color:#0065FC ;
+  text-decoration: overline #0065FC;
+}
+
+.activity {grid-area: 1/5;
     margin-left: 150px;
     margin-top: 10px;
-    font-size: 20px;     
-  }
-    
+    font-size: 20px;
+      }
+ .activity:hover{color:#0065FC;
+  text-decoration: overline #0065FC
+ }
+
+  
   .register{grid-area: 1/6;
     margin-left: 100px;
     margin-top: 10px;
-    font-size: 20px; 
-  }
+    font-size: 20px;
+    color: #0065FC;
+
+  }          
+ 
     
   nav{ width: 900px;
     height: 140px;
@@ -48,20 +61,27 @@
 
  }  
          /*Rechercher  prevoir loupe pour media tel */ 
-#plan{ background-color:  #0065FC; 
+#plan{ background-color:  #0065FC;
+  color: #fff; 
   border-bottom-right-radius: 10px;
   border-top-right-radius:10px; 
    font-size: 20px;
+border: 2px solid  #d9d9d9;
+
  } 
  .canebiere{ font-size: 20px;
+border: 2px solid  #d9d9d9;
+margin-right: -4px;
  
  }                       /*icone réprésentant une goutte*/
-  .eau{border-bottom-left-radius: 10px;
-  border: solid black 1px;
-  padding-top: 5px;
-padding-bottom: 3px;
-border-top-left-radius: 10px;
-  background-color:#F2F2F2;
+  .eau{border-bottom-left-radius: 15px;
+border: 2px solid  #d9d9d9;
+margin-right: -2px;
+  padding-top: 7px;
+padding-bottom: 4px;
+border-top-left-radius: 15px;
+  background-color:#d9d9d9;
+ padding-left: 5px;
 
 }                                   /*filtres*/
         
@@ -78,12 +98,14 @@ border-top-left-radius: 10px;
    
 }
  
-.survolfilters,a:hover{
-cursor:pointer;
-background-color:#f4f6f7;
+.headernav :hover{ cursor: pointer;
 
-transition-duration: 0,05;
+color:#0065FC;
+font: bold;
+transition-duration: 0,20;
+
 }
+
   .filters{font-weight: bold;
  
   }
@@ -95,8 +117,7 @@ padding-left: 10px;
 margin-top:30px ;
 border-radius: 2rem; 
 background-color:#DEEBFF;
-
-}
+ }
 .eco{
 border: 2px solid  #d9d9d9;
 border-radius: 2rem;
@@ -194,8 +215,7 @@ background-color:#DEEBFF;
  
 margin-left: 10px;
 }
-    
-   
+      
   
        /*section principal composé de 9 logement*/
 section{display:inline-grid;
@@ -229,10 +249,7 @@ border-top-right-radius: 10px;
 padding-top: 3px;
 
 }
-
-a:link{ text-decoration: none;
-
-} 
+ 
 .sectionlamer{width:225px;
   height: 280px;
 background-color:  #fff;
@@ -413,9 +430,6 @@ margin-top:50px;
 margin-top:50px;
 
 }
-
-a:hover{color: none;
-}
 article{display:inline-grid;  /*partie activité à marseille*/
   width: 1210px;
   height: 580px;
@@ -489,3 +503,30 @@ cursor: alias;
 h3{font: 300 black;
 font-size: color black;
 }
+
+
+
+
+
+h2{ font-weight: 400;
+
+}
+footer :hover{ color: #0065FC;
+
+}
+
+article :hover{ color: aqua;
+
+}
+section :hover{ color: rgb(111, 0, 255);
+
+}
+a
+{
+
+
+text-decoration:none;
+color: black;
+
+}
+ 
