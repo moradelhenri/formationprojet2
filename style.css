@@ -61,7 +61,10 @@
  form{ margin-top: 30px;
 
  }  
-         /*Rechercher  prevoir loupe pour media tel */ 
+ 
+ .loupe{display: none;
+ }
+ /*Rechercher  prevoir loupe pour media tel */ 
 #plan{ background-color:  #0065FC;
   color: #fff; 
   border-bottom-right-radius: 10px;
@@ -586,7 +589,8 @@ color: black;
   #plan{display: none;
   }
   
-  .loupe{border: 1px black solid;
+  .loupe{display: inline;
+    border: 1px black solid;
   width: 20px;
   padding-top: 6px;
   padding-bottom: 1px;
@@ -664,11 +668,78 @@ color: black;
   margin-top:-36px;
   }
   
+  .populaire{ margin-left: -280px;
+    margin-top: -800px;
+    display: inline-grid;
+    }
+    
+    
+    
+    
+    
+    section{ margin-top:820px;
+    width: 360px;
+    height: 2202px;
+    grid-template-rows: 50px 150px 90px 40px 30px 150px  90px 30px 40px 280px 
+     30px 280px  30px 280px 30px 280px 30px 30px; 
+       
+    }
+    .hebergement{
+    grid-area: 1/1;
+    font-size: 15px;
+    }
+    
+    
+    
+    
+    .sectioncannebiere{
+     width: 350px; 
+    
+    }
+    .auberge{  width: 350px;;                
+      list-style-image:350px; 
+     
+    }
+    
+    
+    .sectionport{
+      grid-area: 6/1;
+    
+    }
+    .hotelport{display: flex;
+      width: 300px;
+    background-size: 300px;
+    }
+    
+    .sectionmouettes{
+      grid-area: 10/1;
+    
+    }
+    
+    .sectionlamer{
+     grid-area:12/1;
+    }
+    .sectionpanier{
+      grid-area:  14/1;
+    
+    }
+    .sectionamina{
+      grid-area: 16/1;
+    }
+    aside{
+      grid-area:18/1;
+    }
+    
+    
+    .hotelmouettes{display: flex;
+    width: 100%;
+    width: 350px;
+    }
+    }
   
   
   
-  
-}
+
   
   
   
