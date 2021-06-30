@@ -1,4 +1,7 @@
-
+ @font-face {
+   font-family:"Raleway";
+   src: url("Raleway-VariableFont_wght.ttf");
+ }
   
   body{width: 1280px;
     height: 100vh;
@@ -70,13 +73,13 @@
   border-bottom-right-radius: 10px;
   border-top-right-radius:10px; 
    font-size: 20px;
- box-shadow:3px 3px 5px 6px #f1f1f1;
+
 
  } 
  .canebiere{ font-size: 20px;
 border: 2px solid  #d9d9d9;
 margin-right: -4px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
+
  }                       /*icone réprésentant une goutte*/
   .eau{border-bottom-left-radius: 17px;
 border: 2px solid  #d9d9d9;
@@ -86,7 +89,6 @@ border-top-left-radius: 17px;
   background-color:#d9d9d9;
  padding-left: 3px;
 padding-bottom: 1px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
 }                                   /*filtres*/
         
  
@@ -132,7 +134,7 @@ padding-left:40px;
 padding-top:10px ;
 padding-bottom:10px;
 text-align: center;
-box-shadow:3px 3px 5px 6px #f1f1f1;
+
 }
 
   .family{
@@ -155,7 +157,7 @@ background-color:#DEEBFF ;
   padding-top:10px ;
   padding-bottom:10px;
   text-align: center;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+ 
 }
 
 .heart{width:40px;
@@ -177,7 +179,7 @@ background-color:#DEEBFF ;
   padding-top:10px ;
   padding-bottom:10px;
   text-align: center;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+
 }
 .dog{width:40px;
   height: 30px;
@@ -200,7 +202,7 @@ background-color:#DEEBFF;
   padding-bottom:10px;
   text-align: center;
    margin-right: 10px;      
-   box-shadow:3px 3px 5px 6px #f1f1f1;                   /*image "i" class aside*/
+                 /*image "i" class aside*/
   }       
             
  .aside{
@@ -492,34 +494,85 @@ article{display:inline-grid;  /*partie activité à marseille*/
 background-color: #fff;
 margin-top: 50px;
 margin-left: 10px;
-grid-template-columns: repeat(4, 1fr);      
-grid-template-rows:50px 190px 30px 30px 30px 
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows:50px 190px 30px 30px 30px
 190px 50px;
 column-gap:20px;
 border: 1px solid #F2F2F2 ;
-box-shadow:3px 3px 5px 6px #f1f1f1;
-border-radius: 10px;
 
- }                                /*activités à marseille*/
-.image_port{                   /*column_1*/
-  margin-top: 22px;
-  border: 2px solid #F2F2F2;
+
+
+ }
+ 
+ .c_1{
+   height: 520px;
+   width: 295px; 
+  grid-area: 2/1;
+  display: inline-grid;
+ 
+  border-radius: 20px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
-  border-radius: 10px;                            
-    }                                                      /*column_2*/
-.image_fort{margin-top: 50px;
+  border: solid black 1px;
+ }
+
+ 
+ /*activités à marseille*/
+.image_port{                   /*column_1*/
+grid-area: 2/1;
+border-top-left-radius: 20px;
+ height: 470px;
+ width: 295px;
+  contain:content;                        
+    }
+
+    .v_1{grid-area: 7/1;
+      margin-left: 10px;
+    font-weight: 800; 
+
+    }
+  .c_2{width: 285px;
+height:260px;
+box-shadow:3px 3px 5px 6px #f1f1f1;
+margin-top: 52px;
+border-radius: 20px;
+display:inline-grid;
+  }
+
+    /*column_2*/
+.image_fort{
   border: 2px solid #F2F2F2;
-  box-shadow:black;
+ width: 285px;
+ height: 180 px;
+  contain: content;
+display: flex;
+  border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+  
+ 
 }
 
 .pomegue{margin-left: 15px;
+ margin-top: 10px;
+ font-weight:800;
 }
 
-.image_frioul{margin-top: 73px;
-  border: 2px solid #F2F2F2;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+.c_3{width: 285px;
+  height: 240px;
+border: black solid 1 px;
+
+margin-top: 20px;
+box-shadow:3px 3px 5px 6px #f1f1f1;
+border-radius: 20px;
+}
+.image_frioul{ 
+height: 170px;
+contain: content;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
 }
 .frioul{ margin-left:15px ;
+font-weight: 800;
+margin-top: 20px;
 
 }
 
@@ -563,9 +616,6 @@ font-size: color black;
 }
 
 
-
-
-
 h2{ font-weight: 400;
 
 }
@@ -590,11 +640,18 @@ color: black;
  
 
 
-@media( max-width:480px) {
-  header{ width: 500px;
+
+  
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  header{
+ min-width: 300px;
+max-width: 400px;
+
+
     height: 100px;
     grid-template-columns: auto;
   grid-template-rows: auto;
+align-self: stretch;
   }
   
   .housing{ grid-area: 2/1;
@@ -615,11 +672,9 @@ color: black;
   padding-left: 50px;
   
   }
-  
-  body{background-color: yellow;
-  
-  
-  }
+
+ 
+ 
   .register{  grid-area :1/2;
   margin-left:70px;
   }
@@ -658,7 +713,7 @@ color: black;
   .headernav{ 
   width: 340px;
   height:280px;
-  
+  align-self: stretch;
   }
   .eco{
     margin-top:70px;
@@ -715,9 +770,7 @@ color: black;
   .aside{margin-left: -220px;
   margin-top: 60px;
   }
-  
-  
-  
+    
   
   .info{ margin-left: 50px;
   margin-top:-36px;
@@ -733,67 +786,68 @@ color: black;
     grid-template-rows: 50px 150px 90px 40px 30px 150px  90px 30px 40px 280px 
      30px 280px  30px 280px 30px 280px 30px 30px; 
       grid-template-columns: 360px;
-        
-         
-       
+      width: à 100% ;  
+     background-color: blue;
+       padding-bottom: 40px;
     }
     .hebergement{
     grid-area: 1/1;
-    font-size: 15px;
+    font-size: 15px;   width: à 100%;
     }
     
     
 .sectioncannebiere{
   display: flex; 
   width: 350px;
- 
+  width: à 100% ;
  }
  .auberge{  width:350px;
    height: 150px;       
  display:flex;
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
- 
+ width: à 100% ;
  }
  .sectionport{
    grid-area: 6/1;
- width: 350px;
+ width: 350px;   width: à 100% ;
  }
  .hotelport{display: flex;
    width: 350px;
  height: 150px;
  border-top-left-radius: 20px;
- border-top-right-radius: 20px;
+ border-top-right-radius: 20px;   width: à 100% ;
  }
  
  
  .sectionmouettes{
    grid-area: 10/1;
  width: 350px;
- 
+ width: à 100% ;
  }
  
  .sectionlamer{
   grid-area:12/1;
-  width: 350px;
+  width: 350px;   width: à 100% ;
  }
  .hotelamer{ width: 350px;
    height: 150px;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
- 
+   width: à 100% ;
  }
  
  .sectionpanier{
    grid-area:  14/1;
    width: 350px;
+   width: à 100% ;
  }
  
  .aubergepanier{width: 350px;
    height: 150px;
    border-top-left-radius: 20px;
-   border-top-right-radius: 20px
- 
+   border-top-right-radius: 20px;
+   width:à 100% ;
  }
  .sectionamina{
    grid-area: 16/1;
@@ -821,32 +875,86 @@ color: black;
 
  article { width: 400px;
   grid-template-columns: 360px;
-  grid-template-rows: 50px 190px 30px 30px 30px
+  grid-template-rows: 50px 190px 40px 50px 30px
   190px 50px 50px 190px 30px 30px 30px 190px 50px 190px 30px 30px 190px
   30px 30px 30px 190px 30px  30px 30px 190px;
-height: 2000px;
-border-radius: 20px;
+height: 1400px;
 
-display:grid;      
+margin-top: 1px;
+display:grid;     
+padding-top: 25px;
+
+}
+.image_port{width: 350px;
+height: 200px;
+contain:content;
+margin-top: -12px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+.a_m{
+ margin-top: 40px;
+display: inline-grid;
+}
+.image_fort{ 
+
+width: 350px;
+height: 205px;
+contain: content;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
 
 }
 
-#column_1{grid-area: 1/1;
+.v_1{margin-left: 20px;
+  grid-area: 4/1;
+margin-top: 10px;
+}
+#column_1{margin-top: -48px;
+
 margin-left: 10px;
 
 }
-.image_port{width: 360px;
+.c_1{height: 280px;
+  width: 350px;
+background-color: #fff;
+grid-area: 2/1;
+ box-shadow:3px 3px 5px 6px #f1f1f1;
+ margin-left: 10px;
+ display:inline-grid;
+ border-radius: 20px;
+}
+
+.c_2{ 
+
+height: 280px;
+width: 350px;
+margin-top: 120px;
+box-shadow:3px 3px 5px 6px #f1f1f1;
+
+display: inline -grid;
+}
+
+#column_2{
+margin-left: 10px;
+}
+
+
+.c_3{
+  height: 280px;
+  width: 350px; 
+  box-shadow:3px 3px 5px 6px #f1f1f1;
+ margin-top: 50px;
+}
+
+.image_frioul{width: 350px;
 height: 200px;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-border: solid black 3 px; 
-background-color: brown;
 contain: content;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+
 }
 
-#column_2{grid-area: 9/1;
-
-}
 #column_3{grid-area: 15/1;
 
 }
@@ -858,7 +966,6 @@ contain: content;
 
 
 footer{margin-top:600px;
-
 
 
 
