@@ -4,13 +4,14 @@
  }
   
   body{width: 1280px;
-    height: 100vh;
+  height: 100vh;
  margin: 0;
  padding: 0;
  font-family: "Raleway", "sans Serif"; 
  font-weight: 500;
   }
- 
+
+
 
   header{ display:grid; 
     max-width: 1350px;
@@ -19,11 +20,11 @@
    grid-template-rows: 30px 30px;
    grid-template-columns:repeat( 6, 200px);
  
-
   }
-   
+
+
   .logo{ margin-top:-10px ;
-  
+  grid-area: 1/1;
   }
   .housing{  grid-area: 1/4;
    margin-left: 150px;
@@ -232,12 +233,16 @@ section{display:inline-grid;
    margin-left: 10px;padding: 20px;
    padding-bottom: 38px;
    border-radius: 15px;
-    margin-top: 80px;
+    margin-top: 40px;
     box-shadow:3px 3px 5px 6px #f1f1f1; 
   }
 
-.hebergement,h2{ width: 300px;    /* hebergement a marseille*/
-   display: inline;}
+.hebergement{ width: 350px;    /* hebergement a marseille*/
+ margin-top: 8px;
+ display:flex;
+font-weight: bold;
+flex-wrap: nowrap;
+ }
 
 .sectioncannebiere{ border:1px black ;
   width: 225px;
@@ -382,22 +387,22 @@ font-size: 20px;
 /* section 2 =3 logement "populaire" */
 .populaire{display: inline-grid;
  height: 740px;
- width: 360px;
+ width: 350px;
 grid-template-rows: 50px 210px 30px 210px 30px 210px;
 grid-template-columns: 120px 200px;
 margin-top: -20px;
 padding:20px;
 padding-bottom: 30px;
 background-color:#F2F2F2;
-margin-left: 530px;
+margin-left: 550px;
 border-radius: 15px;
 box-shadow:3px 3px 5px 6px #f1f1f1;
 }
 
 .lesplus{ width: 350px;
   height: 50px; 
-   
-
+  font-weight: 800; 
+ margin-top: 8px;
 }
 .anchor{ display:flex;
   width: 30px;
@@ -508,13 +513,13 @@ border: 1px solid #F2F2F2 ;
    height: 520px;
    width: 295px; 
   grid-area: 2/1;
-  display: inline-grid;
- 
+  display: inline-grid; 
   border-radius: 20px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
-  border: solid black 1px;
+ 
  }
-
+.a_m{font-weight:bolder;
+}
  
  /*activités à marseille*/
 .image_port{                   /*column_1*/
@@ -544,7 +549,6 @@ display:inline-grid;
  width: 285px;
  height: 180 px;
   contain: content;
-display: flex;
   border-top-left-radius: 20px;
 border-top-right-radius: 20px;
   
@@ -558,46 +562,83 @@ border-top-right-radius: 20px;
 
 .c_3{width: 285px;
   height: 240px;
-border: black solid 1 px;
+display: inline grid;
 
-margin-top: 20px;
+margin-top: 15px;
 box-shadow:3px 3px 5px 6px #f1f1f1;
 border-radius: 20px;
 }
 .image_frioul{ 
-height: 170px;
+height: 190px;
+width: 285px;
 contain: content;
 border-top-left-radius:20px;
 border-top-right-radius:20px;
+
 }
 .frioul{ margin-left:15px ;
 font-weight: 800;
-margin-top: 20px;
+margin-top: 15px;
 
 }
+.c_4{ width: 290px;
+  height: 520px; 
 
-.image_calanque{  margin-top: 50px;           /*column_3*/
-  border: 2px solid #F2F2F2;
-  box-shadow:black;
+box-shadow:3px 3px 5px 6px #f1f1f1;
+border-radius: 20px;
+display: inline grid;
+grid-area: 2/3;
 }
-.parc{margin-left:15px ;
-  border: 2px solid #F2F2F2;
+
+.image_calanque{        /*column_3*/
+   grid-area: 2/3;
+ width: 290px;
+ height:470px ;
+ contain: content;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+}
+.parc{grid-area: 7/3;
+  margin-left: 10px;
+ font-weight: 800; 
+margin-top: 10px;
+} 
+.c_5{ width: 288px;
+  height: 250px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
-}                           /*column_4*/
-.image_dame{margin-top: 50px;
-  border: 2px solid #F2F2F2;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+  border-radius: 20px;
+margin-top: 50px;
+
+
+}                          /*column_4*/
+.image_dame{
+ width: 288px;
+ height: 190px;
+ contain: content;
+ border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
 } 
 .notre{ margin-left: 15px;
-  
+ font-weight: 800; 
+}
+.c_6{ width: 288px;
+   height: 250px;
+margin-top: 20px;
+box-shadow:3px 3px 5px 6px #f1f1f1;
+border-radius: 20px;
 }
 
-.image_longchamp{margin-top: 40px;
-  border: 2px solid #F2F2F2;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+.image_longchamp{
+  width: 288px;
+  height: 200px;
+  contain: content;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
 }
 .lonchamp{ margin-left:15px;
- font-style:  black;
+margin-top: 10px;
+font-weight: 800;
 }
 
 footer{display: grid;
@@ -608,7 +649,6 @@ margin-top: 50px;
 grid-template-rows: auto;
 background-color:#F2F2F2;
 margin-left: 10px;
-cursor: alias;
 box-shadow:3px 3px 5px 6px #f1f1f1;
 }
 h3{font: 300 black;
@@ -616,10 +656,10 @@ font-size: color black;
 }
 
 
-h2{ font-weight: 400;
+h2{ font-weight: 800;
 
-}
-footer :hover{ color: #0065FC;
+
+
 
 }
 
@@ -632,17 +672,12 @@ section :hover{ color: rgb(111, 0, 255);
 a
 {
 
-
 text-decoration:none;
 color: black;
 
 }
- 
-
-
-
-  
-@media only screen and (min-width: 320px) and (max-width: 480px){
+   
+@media only screen and (min-width: 300px) and (max-width: 480px){
   header{
  min-width: 300px;
 max-width: 400px;
@@ -671,10 +706,7 @@ align-self: stretch;
   width: 240px;
   padding-left: 50px;
   
-  }
-
- 
- 
+  } 
   .register{  grid-area :1/2;
   margin-left:70px;
   }
@@ -682,8 +714,7 @@ align-self: stretch;
   nav{flex-wrap: wrap;
   width: 400px;
   height: 180px;
-  
-  }
+    }
   
   form{  
     
@@ -714,14 +745,13 @@ align-self: stretch;
   width: 340px;
   height:280px;
   align-self: stretch;
+
   }
   .eco{
     margin-top:70px;
   align-self: flex-start;
   
-  }
-  
-  
+  }    
   .filters {
   align-self: flex-start;
   margin-left: 5px;
@@ -747,10 +777,7 @@ align-self: stretch;
   }
   .heart{margin-left: -5px;
   }
-  
-  
-  
-  
+      
   .animals{margin-left:-07px;
   position: relative;
   
@@ -775,9 +802,8 @@ align-self: stretch;
   .info{ margin-left: 50px;
   margin-top:-36px;
   }
-  .populaire{margin-left: -20px;
-    margin-top: -1010px;
-    display: inline-grid;
+  .populaire{margin-left:-20px;
+margin-top: -1010px
     }
     
     section{ margin-top:850px;
@@ -787,7 +813,7 @@ align-self: stretch;
      30px 280px  30px 280px 30px 280px 30px 30px; 
       grid-template-columns: 360px;
       width: à 100% ;  
-     background-color: blue;
+    
        padding-bottom: 40px;
     }
     .hebergement{
@@ -921,30 +947,24 @@ background-color: #fff;
 grid-area: 2/1;
  box-shadow:3px 3px 5px 6px #f1f1f1;
  margin-left: 10px;
- display:inline-grid;
  border-radius: 20px;
 }
 
 .c_2{ 
 
 height: 280px;
-width: 350px;
-margin-top: 120px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
-
-display: inline -grid;
+width: 350px;box-shadow:3px 3px 5px 6px #f1f1f1;
+grid-area: 6/1;
+margin-top: 5px;
 }
-
-#column_2{
-margin-left: 10px;
-}
-
 
 .c_3{
   height: 280px;
   width: 350px; 
   box-shadow:3px 3px 5px 6px #f1f1f1;
  margin-top: 50px;
+ 
+
 }
 
 .image_frioul{width: 350px;
@@ -952,24 +972,75 @@ height: 200px;
 contain: content;
 border-top-left-radius:20px;
 border-top-right-radius:20px;
+}
+
+.c_4{ 
+  height: 280px;
+  width: 350px;
+  display: grid; 
+  grid-area: 13/1;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.image_calanque{
+grid-area: 13/1;
+  width: 350px;
+  height: 200px;
+  contain: content;
+ margin-top:-90px;
+}
+.parc{
+  grid-area: 15/1;
+
+}
+.c_5{
+  height: 280px;
+  width: 350px;
+margin-left: 10px;
+}
+.image_dame{ width: 350px;
+  height: 200px;
+contain: content;
+}
+
+.c_6{
+  height: 280px;
+ width: 350px;
+margin-left: 10px;
+}
+
+.image_longchamp{width: 350px;
+  height: 200px;
+contain: content;
 
 }
 
-#column_3{grid-area: 15/1;
+#column_2{
+  margin-left: 10px;
+  grid-area: 6/1;
+}
+#column_3{grid-area: 13/1;
 
 }
-#column_4{grid-area: 22/1;
+#column_4{grid-area: 15/1;
+margin-top: 65px;
+}
+
+
+
+footer{margin-top: 500px;
+grid-template-columns:360px;
+grid-template-rows: 200px 150px 150px;
+width: 360px;
+height: 500px;
+
+}
+.p_1, .p_2,.h_2,.h_3,.a_3,.a_4 {margin-left: 10px;
 
 }
 
 
 
-
-footer{margin-top:600px;
-
-
-
-}
 
 }
   
