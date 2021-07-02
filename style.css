@@ -1055,12 +1055,50 @@ body{ width: auto;
   background-color: aqua;
 
 }
-  
-  
+ 
+header{ width: auto;
 
+}
+  
+ .housing{ grid-area: 2/2;
+  margin-left: -20px;
 
 } 
 
+.activity{ grid-area: 2/3;
+  margin-left: -10px;
+
+}
+.register{  grid-area :1/4;
+  margin-left: -40px;
+ 
+  }
+
+  .headernav{ 
+    width: 650px;
+    height:250px;
+ flex-wrap: wrap;
+  }
+
+
+.aside{display:inline-flex;
+ margin-top: 50px;
+ margin-left:-250px;
+}
+
+
+.info{margin-top: 50px;
+
+}
 
 
 
+}
+
+
+
+
+
+
+
+}
