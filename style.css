@@ -592,11 +592,12 @@ grid-area: 2/3;
 
 .image_calanque{        /*column_3*/
    grid-area: 2/3;
- width: 290px;
+ width: 288px;
  height:470px ;
- contain: content;
+ contain:content;
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
+ display: flex;
 }
 .parc{grid-area: 7/3;
   margin-left: 10px;
@@ -678,6 +679,13 @@ color: black;
 }
    
 @media only screen and (min-width: 300px) and (max-width: 480px){
+ 
+ body{width: auto;
+
+ }
+ 
+ 
+ 
   header{
  min-width: 300px;
 max-width: 400px;
@@ -1039,10 +1047,20 @@ height: 500px;
 
 }
 
-
-
+}
+  
+@media only screen and (min-width: 480px) and (max-width: 700px){
+  
+body{ width: auto;
+  background-color: aqua;
 
 }
   
   
-  
+
+
+} 
+
+
+
+
