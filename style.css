@@ -644,7 +644,7 @@ font-weight: 800;
 
 footer{display: grid;
  width: 1210px;
- height: 130px;
+ height: 180px;
 grid-template-columns :repeat(3, 1fr);
 margin-top: 50px;
 grid-template-rows: auto;
@@ -680,7 +680,7 @@ color: black;
    
 @media only screen and (min-width: 300px) and (max-width: 480px){
  
- body{width: auto;
+ body{width:auto;
 
  }
  
@@ -810,78 +810,77 @@ align-self: stretch;
   .info{ margin-left: 50px;
   margin-top:-36px;
   }
-  .populaire{margin-left:-20px;
-margin-top: -1010px
+  .populaire{margin-left:-13px;
+margin-top: -64rem;
     }
     
-    section{ margin-top:850px;
+    section{ margin-top:54rem;
     width: 360px;
     height: 1900px;
     grid-template-rows: 50px 150px 90px 40px 30px 150px  90px 30px 40px 280px 
      30px 280px  30px 280px 30px 280px 30px 30px; 
-      grid-template-columns: 360px;
-      width: à 100% ;  
-    
-       padding-bottom: 40px;
-    }
+      grid-template-columns: 360px;      
+           padding-bottom: 40px;
+    background-color: #fff;
+          }
     .hebergement{
     grid-area: 1/1;
-    font-size: 15px;   width: à 100%;
+     
     }
     
     
 .sectioncannebiere{
   display: flex; 
   width: 350px;
-  width: à 100% ;
+  
  }
  .auberge{  width:350px;
    height: 150px;       
  display:flex;
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
- width: à 100% ;
+
  }
  .sectionport{
    grid-area: 6/1;
- width: 350px;   width: à 100% ;
+ width: 350px;  
  }
  .hotelport{display: flex;
    width: 350px;
  height: 150px;
  border-top-left-radius: 20px;
- border-top-right-radius: 20px;   width: à 100% ;
+ border-top-right-radius: 20px;   
  }
  
  
  .sectionmouettes{
    grid-area: 10/1;
  width: 350px;
- width: à 100% ;
+
  }
  
  .sectionlamer{
   grid-area:12/1;
-  width: 350px;   width: à 100% ;
+  width: 350px;   
  }
  .hotelamer{ width: 350px;
    height: 150px;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   width: à 100% ;
+ 
  }
  
  .sectionpanier{
    grid-area:  14/1;
    width: 350px;
-   width: à 100% ;
+
  }
  
  .aubergepanier{width: 350px;
    height: 150px;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   width:à 100% ;
+ 
  }
  .sectionamina{
    grid-area: 16/1;
@@ -900,7 +899,7 @@ margin-top: -1010px
  
  
  .hotelmouettes{display:flex;
- width: 100%;
+
  width: 350px;
  border-top-left-radius: 20px;
  border-top-right-radius: 40px;
@@ -913,8 +912,8 @@ margin-top: -1010px
   190px 50px 50px 190px 30px 30px 30px 190px 50px 190px 30px 30px 190px
   30px 30px 30px 190px 30px  30px 30px 190px;
 height: 1400px;
-
 margin-top: 1px;
+
 display:grid;     
 padding-top: 25px;
 
@@ -927,8 +926,7 @@ border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 }
 .a_m{
- margin-top: 40px;
-display: inline-grid;
+ margin-top:5px;
 }
 .image_fort{ 
 
@@ -944,7 +942,7 @@ border-top-right-radius:20px;
   grid-area: 4/1;
 margin-top: 10px;
 }
-#column_1{margin-top: -48px;
+#column_1{
 
 margin-left: 10px;
 
@@ -958,7 +956,8 @@ grid-area: 2/1;
  border-radius: 20px;
 }
 
-.c_2{ 
+.c_2
+{ 
 
 height: 280px;
 width: 350px;box-shadow:3px 3px 5px 6px #f1f1f1;
@@ -971,7 +970,6 @@ margin-top: 5px;
   width: 350px; 
   box-shadow:3px 3px 5px 6px #f1f1f1;
  margin-top: 50px;
- 
 
 }
 
@@ -996,6 +994,7 @@ grid-area: 13/1;
   height: 200px;
   contain: content;
  margin-top:-90px;
+ display: grid;
 }
 .parc{
   grid-area: 15/1;
@@ -1091,9 +1090,114 @@ header{ width: auto;
 
 }
 
+.populaire{ display:inline-grid;
+margin-left: -21.5rem;
+margin-top:-51rem; 
+width: 620px;
+}
 
+.lesplus{ width: 350px;
+  height: 50px; 
+  font-weight: 800; 
+ margin-top: 8px;
+}
+.anchor{ display:flex;
+  width: 30px;
+  height: 30px;
+  grid-area: 1/2;
+margin-left:27em; 
+background-color:#F2F2F2 ;    
 
 }
+section{ margin-top: 51rem;
+  height:1030px;
+  width: 620px;
+  grid-template-columns: 295px  295px;
+}
+.sectiondumatin{width: 610px;
+
+}
+
+.section_eau{width: 610px;
+}
+
+.section_bleu{width: 610px;
+}
+
+.sectionmouettes{ grid-area: 9/1;
+  margin-top: 3rem;
+width: 290px;
+contain: content;
+}
+.hotelmouettes{
+  width: 290px; 
+}
+
+.sectionamina{ grid-area: 9/2;
+margin-top: 3rem;
+width: 290px;
+
+}
+.hotelamina{
+width: 290px;
+}
+.sectioncannebiere,.auberge{
+  width: 290px;
+} 
+.sectionport,.hotelport{ width: 290px;
+
+}
+
+.sectionlamer,.hotelamer{ width: 290px;
+  
+}
+.sectionpanier,.aubergepanier{ width: 290px;
+
+}
+
+aside{ 
+
+ margin-top: 20rem;
+}
+article{height: 1150px;
+  width: 665px;
+  grid-template-columns: 320px 335px;
+margin-top: 30px;
+}
+.c_4{grid-area: 8/1;
+}
+.c_1,.c_4,.c_5,.c_6,.c_2,
+.image_port,
+.image_calanque,
+.image_longchamp,
+.image_dame ,.image_fort,
+.c_3,.image_frioul
+{
+  width:320px;
+contain:content;
+}
+
+
+#column_4{grid-area: 8/2;
+margin-top:-50px;
+}
+
+footer{width: 670px;
+height: 230px;
+flex-wrap: wrap;
+}
+.p_1,.p_2{margin-left: 10px;
+
+}
+.h_2,.h_3{ margin-left: 30px;
+
+}
+.a_3,.a_4{margin-left: 50px;
+
+}
+
+
+
 
 
 
