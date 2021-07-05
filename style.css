@@ -523,7 +523,7 @@ border: 1px solid #F2F2F2 ;
   display: inline-grid; 
   border-radius: 20px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
- 
+ margin-top: -18px;
  }
 .a_m{font-weight:bolder;
 }
@@ -534,7 +534,8 @@ grid-area: 2/1;
 border-top-left-radius: 20px;
  height: 470px;
  width: 295px;
-  contain:content;                        
+  contain:content; 
+
     }
 
     .v_1{grid-area: 7/1;
@@ -581,7 +582,7 @@ width: 285px;
 contain: content;
 border-top-left-radius:20px;
 border-top-right-radius:20px;
-
+margin-top: 2px;
 }
 .frioul{ margin-left:15px ;
 font-weight: 800;
@@ -590,15 +591,15 @@ margin-top: 15px;
 }
 .c_4{ width: 290px;
   height: 520px; 
-
 box-shadow:3px 3px 5px 6px #f1f1f1;
 border-radius: 20px;
 display: inline grid;
-grid-area: 2/3;
+grid-area:2/3;
+margin-top: 50px;
 }
 
 .image_calanque{        /*column_3*/
-   grid-area: 2/3;
+ 
  width: 288px;
  height:470px ;
  contain:content;
@@ -606,7 +607,7 @@ grid-area: 2/3;
  border-top-right-radius: 20px;
  display: flex;
 }
-.parc{grid-area: 7/3;
+.parc{
   margin-left: 10px;
  font-weight: 800; 
 margin-top: 10px;
@@ -1185,6 +1186,19 @@ margin-top: 30px;
 contain:content;
 }
 
+.c_4{margin-top:10px;
+
+}
+
+.c_5{margin-top:110px;
+} 
+
+
+
+
+#column_3{ grid-area: 8/1;
+  margin-top: 50px;
+}
 
 #column_4{grid-area: 8/2;
 margin-top:-50px;
@@ -1332,8 +1346,11 @@ aside{grid-area: 50/1;
     width:360px;
   contain:content;
   }
-  
-  
+  .c_5{margin-top:110px;
+  } 
+  #column_3{ grid-area: 8/1;
+    margin-top: 50px;
+  }
   #column_4{grid-area: 8/2;
   margin-top:-50px;
   }
