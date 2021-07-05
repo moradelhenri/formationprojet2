@@ -3,7 +3,8 @@
    src: url("Raleway-VariableFont_wght.ttf");
  }
   
-  body{width: 1280px;
+  body{ max-width: 100%;
+    overflow: auto;
   height: 100vh;
  margin: 0;
  padding: 0;
@@ -14,7 +15,7 @@
 
 
   header{ display:grid; 
-    max-width: 1350px;
+    max-width:100%;
     height:60px;
     margin-left: 10px;
    grid-template-rows: 30px 30px;
@@ -34,6 +35,7 @@
 
   .housing:hover{ color:#0065FC ;
     text-decoration: overline #0065FC
+ 
 
   }
 .activity {grid-area: 1/5;
@@ -64,24 +66,38 @@
 }    /*h1 et aside class à prévoir
          pour petite resolution*/
         
- form{ margin-top: 30px;
 
- }  
+ form{ margin-top: 15px;
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
  
+ }
  .loupe{display: none;
  }
  /*Rechercher  prevoir loupe pour media tel */ 
-#plan{ background-color:  #0065FC;
-  color: #fff; 
-  border-bottom-right-radius: 10px;
-  border-top-right-radius:10px; 
-   font-size: 20px;
-
+#plan{  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  padding-right:1.5rem;
 
  } 
- .canebiere{ font-size: 20px;
-border: 2px solid  #d9d9d9;
-margin-right: -4px;
+ .canebiere{border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway","Sans serif";  
+ 
 
  }                       /*icone réprésentant une goutte*/
   .eau{border-bottom-left-radius: 17px;
@@ -108,13 +124,18 @@ padding-bottom: 1px;
 }
  
 .headernav :hover{ cursor: pointer;
-background-color: #00fcfc;
-color:#0065FC;
+  transition-delay:1.25;
+
+  background-color: #0065FC;
+float: left;
+
 font: bold;
-float:inline-end
+
+
+
+
 
 }
-
   .filters{font-weight: bold;
  
   }
@@ -516,7 +537,7 @@ border: 1px solid #F2F2F2 ;
 
  }
  
- .c_1{
+ .c_1 {
    height: 520px;
    width: 295px; 
   grid-area: 2/1;
@@ -525,6 +546,15 @@ border: 1px solid #F2F2F2 ;
   box-shadow:3px 3px 5px 6px #f1f1f1;
  margin-top: -18px;
  }
+
+ .c_1 :hover{cursor: pointer;
+  transition-delay:1.25;
+  color :#DEEBFF ;
+
+}
+ 
+
+
 .a_m{font-weight:bolder;
 }
  
@@ -550,7 +580,10 @@ margin-top: 52px;
 border-radius: 20px;
 display:inline-grid;
   }
-
+  .c_2  :hover{cursor: pointer;
+    transition-delay:1.25;
+     color:#0065FC;
+  }
     /*column_2*/
 .image_fort{
   border: 2px solid #F2F2F2;
@@ -572,9 +605,22 @@ border-top-right-radius: 20px;
   height: 240px;
 display: inline grid;
 
-margin-top: 15px;
+margin-top: 15px; 
 box-shadow:3px 3px 5px 6px #f1f1f1;
 border-radius: 20px;
+
+}
+.c_3 :hover{cursor: pointer;
+  transition-delay:1,25;
+   color:#F2F2F2;
+}
+.c_4 :hover{cursor: pointer;
+  color:#0065FC;
+}
+
+.c_5{cursor: pointer;
+  
+
 }
 .image_frioul{ 
 height: 190px;
@@ -670,9 +716,11 @@ h2{ font-weight: 800;
 
 
 
-}
 
-article :hover{ color: aqua;
+
+
+
+
 
 }
 section :hover{ color: rgb(111, 0, 255);
@@ -688,8 +736,9 @@ color: black;
    
 @media only screen and (min-width: 300px) and (max-width: 480px){
  
- body{width:auto;
-
+  body{ width:100%;
+    overflow: auto;
+   
  }
  
  
@@ -1058,9 +1107,9 @@ height: 500px;
   
 @media only screen and (min-width: 481px) and (max-width: 720px){
   
-body{ width: auto;
+body{ width:100%;
  background-size: auto;
-
+overflow: auto;
 }
  
 header{ width: auto;
@@ -1222,7 +1271,7 @@ flex-wrap: wrap;
 
 @media only screen and (min-width: 721px) and (max-width:870px){
 
-body{width: auto;
+body{width:100%;
 
 }
 
