@@ -124,10 +124,10 @@ padding-bottom: 1px;
 }
  
 .headernav :hover{ cursor: pointer;
-  transition-delay:1.25;
+  transition-duration:1.25;
+contain: style;
 
   background-color: #0065FC;
-float: left;
 
 font: bold;
 
@@ -193,6 +193,7 @@ margin-top:10px;
 padding-top: 10px;
 border-radius: 2rem;
 background-color:#DEEBFF ;
+
 }
 
 .romantic{border: 2px solid  #d9d9d9;
