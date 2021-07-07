@@ -5,7 +5,7 @@
   
 
 .wapper {width: 1440px;
-  height: 2094px;
+height: 2094;
   margin: auto;
   border: solid black 1 px;
 }
@@ -548,12 +548,14 @@ box-shadow:3px 3px 5px 6px #f1f1f1;
 
  }
  
- #c_1 {
+ .c_1 {
    height: 520px;
    width: 295px;
   border-radius: 20px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
 
+  display: inline-grid;
+  margin-top:-9px;
  }
 
  
@@ -582,7 +584,7 @@ border-top-left-radius: 20px;
     .v_1{grid-area: 7/1;
       margin-left: 10px;
     font-weight: 800;
-   margin-top: 10px;
+   margin-top: 15px;
  
     }
 .column_1{grid-area: 1/1;
@@ -600,88 +602,95 @@ border-top-left-radius: 20px;
 }
   
 
-  #c_2{width: 285px;
-height:260px;
+  .c_2{width: 285px;
+height:230px;
 box-shadow:3px 3px 5px 6px #f1f1f1;
 border-radius: 20px;
 
+margin-top: 50px;
+display: inline-grid;
 
   
   }
     /*column_2*/
-.image_fort{
+ .image_fort{
  width: 285px;
- height: 180 px;
-  contain: content;
+ height: 220 px;
+
   border-top-left-radius: 20px;
 border-top-right-radius: 20px;
-grid-area: 2/2;
- 
+contain:content;
+
+
 }
 
 .pomegue{margin-left: 15px;
-grid-area: 4/2;
+
  font-weight:800;
- margin-top: 8px;
+ margin-top: 15px;
 }
 
-#c_3{width: 285px;
-  height: 240px;
+.c_3{width: 285px;
+  height: 270px;
 display: inline grid;
-grid-area: 6/2; 
+margin-top: 20px; 
 box-shadow:3px 3px 5px 6px #f1f1f1;
 border-radius: 20px;  
+display:inline-grid;
+
 
 }
 .image_frioul{ 
-height: 190px;
+height: 220px;
 width: 285px;
 contain: content;
 border-top-left-radius:20px;
 border-top-right-radius:20px;
-
+display:inline-grid;
 grid-area: 6/2;
 }
 .frioul{ margin-left:15px ;
 font-weight: 800;
-margin-top:10px;
+margin-top:15px;
 grid-area: 7/2;
 
 }
-#c_4{ width: 290px;
+.c_4{ width: 290px;
   height: 520px; 
 box-shadow:3px 3px 5px 6px #f1f1f1;
 border-radius: 20px;
+display: inline-grid;
+
 margin-top: 50px;
 }
 
 .image_calanque{        /*column_3*/
  
- width: 288px;
+ width: 290px;
  height:470px ;
  contain:content;
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
- display: flex;
- grid-area: 2/3;
+
+display: flex;
 }
 .parc{
   margin-left: 10px;
  font-weight: 800; 
-margin-top: 10px;
-grid-area: 7/3;
+margin-top: 15px;
+
 } 
-#c_5{ width: 288px;
+.c_5{ width: 288px;
   height: 250px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
   border-radius: 20px;
+  display: inline-grid;
 
-
-
+margin-top: 50px;
 }                          /*column_4*/
 .image_dame{
  width: 288px;
- height: 190px;
+ height: 195px;
  contain: content;
  border-top-left-radius: 20px;
   border-top-right-radius: 20px; 
@@ -691,19 +700,24 @@ grid-area: 7/3;
  font-weight: 800; 
  grid-area: 3/4;
 }
-#c_6{ width: 288px;
+.c_6{ width: 288px;
    height: 250px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
+margin-top: -10px;
 border-radius: 20px;
+grid-area: 6/4;
+
+box-shadow:3px 3px 5px 6px #f1f1f1;
 
 }
 .image_longchamp{
   width: 288px;
-  height: 190px;
+  height: 200px;
   contain: content;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-grid-area: 6/4;
+
+margin-top:- 20px;
+
 }
 .lonchamp{ margin-left:15px;
 margin-top: 10px;
@@ -992,7 +1006,7 @@ margin-top: -64rem;
   grid-template-rows: 50px 190px 40px 50px 30px
   190px 50px 50px 190px 30px 30px 30px 190px 50px 190px 30px 30px 190px
   30px 30px 30px 190px 30px  30px 30px 190px;
-height: 1440px;
+height: 1920px;
 margin-top: 1px;
 
 display:grid;     
@@ -1004,11 +1018,12 @@ height: 200px;
 contain:content;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
-margin-left: 5px;
+margin-top: -10px;
 }
 
 .a_m{
  margin-top:5px;
+ margin-left: 10px;
 }
 .image_fort{ 
 grid-area: 6/1;
@@ -1018,48 +1033,47 @@ contain: content;
 border-top-left-radius:20px;
 border-top-right-radius:20px;
 display: flex;
-margin-left: 5px;
+margin-top:-33px;
 }
 
 .v_1{margin-left: 20px;
   grid-area: 4/1;
 margin-top: 10px;
 }
-.column_1{
 
-margin-left: 10px;
-
-}
 .pomegue{
   grid-area: 8/1;
 }
 
-#c_1{height: 280px;
+.c_1{height: 280px;
   width: 350px;
 background-color: #fff;
 grid-area: 2/1;
  box-shadow:3px 3px 5px 6px #f1f1f1;
- margin-left: 5px;
+ margin-left: 20px;
  border-radius: 20px;
+
 }
 
-#c_2
+.c_2
 { 
-margin-left: 5px;
+margin-left:10px;
 height: 280px;
 width: 350px;box-shadow:3px 3px 5px 6px #f1f1f1;
-grid-area: 6/1;
+margin-top: -5px;
+
 
 }
 
-#c_3{
+.c_3{
   height: 280px;
   width: 350px; 
   box-shadow:3px 3px 5px 6px #f1f1f1;
-margin-top: 20px;
+margin-top: 30px;
 border-radius: 20px;
 
 grid-area:9/1;
+margin-left: 10px;
 }
 
 .image_frioul{width: 350px;
@@ -1068,70 +1082,73 @@ contain: content;
 border-top-left-radius:20px;
 border-top-right-radius:20px;
 grid-area: 9/1;
-margin-top: 20px;
+margin-top: -3rem;
 
 }
 .frioul{grid-area: 12/1;
 
 }
 
-#c_4{ 
+.c_4{ 
   height: 280px;
   width: 350px;
   display: grid; 
- margin-top: 50px;
+ margin-top: 45px;
   grid-area:13/1;
- 
+
+margin-left: 20px;
 }
 .image_calanque{
 grid-area: 13/1;
   width: 350px;
   height: 200px;
   contain: content;
-margin-top: 50px;
+margin-top: -97px;
  display: grid;
 
 }
 .parc{
   grid-area: 15/1;
-  margin-top:50px;
+
 
 }
-#c_5{
+.c_5{
   height: 280px;
   width: 350px;
 grid-area: 16/1;
+margin-left: 20px;
 
-margin-top:-70px;
+
 }
 .image_dame{ width: 350px;
   height: 200px;
 contain: content;
 grid-area: 16/1;
-margin-top:-70px;
+margin-top: -4.8rem;
 
 }
 .notre{grid-area: 19/1;
-margin-top: -80px;
+
 
 }
-#c_6{
+.c_6{
   height: 280px;
  width: 350px;
 
  grid-area: 19/1;
- margin-top: -10px;
+ margin-top: -12px;
+ margin-left: 20px;
 }
 
 .image_longchamp{width: 350px;
   height: 200px;
 contain: content;
 grid-area: 19/1;
- margin-top: -10px;
+
 }
 .lonchamp{
   grid-area: 23/1;
-margin-top: -50px;
+margin-top:30px;
 }
 .column_2{
   margin-left: 10px;
@@ -1146,12 +1163,13 @@ margin-top: 65px;
 
 
 
-footer{margin-top: 500px;
-grid-template-columns:360px;
+footer{margin-top:30px;
+grid-template-columns:400px;
 grid-template-rows: 200px 150px 150px;
-width: 360px;
+width: 400px;
 height: 500px;
 
+margin-left: 10px;
 }
 .p_1, .p_2,.h_2,.h_3,.a_3,.a_4 {margin-left: 10px;
 
@@ -1171,7 +1189,7 @@ overflow: auto;
 }
  
 header{ width: auto;
-align-self: stretch;
+
 background-size: auto;
 }
   
@@ -1275,97 +1293,108 @@ aside{grid-area:50/1;
 
 
 }
-article{height: 1100px;
+article{height: 1180px;
   width: 665px;
   grid-template-columns: 320px 335px;
 margin-top: 30px;
+box-shadow:3px 3px 5px 6px #f1f1f1;  
+
 }
-#c_1{ 
+
+
+.a_m{margin-left: 10px;
+
+}
+
+.c_1{ 
   width: 320px;
  grid-area: 2/1; 
- box-shadow:3px 3px 5px 6px #f1f1f1; 
+ box-shadow:3px 3px 5px 6px #f1f1f1;  
 }
 .image_port{ width: 320px;
   border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 }
-
 .column_3{grid-area:  8/1;
 
 }
-#c_4{
+.column_4{grid-area: 8/2;
+
+}
+.c_4{
   grid-area: 8/1;
   width:320px;
-  height: 520px;
-  margin-top:40px ;
+  height: 530px;
+  margin-top:30px ;
   box-shadow:3px 3px 5px 6px #f1f1f1;
   background-color: #fff;
+
 }
 .image_calanque{
-  grid-area: 8/1;
-  margin-top: 30px;
+  height: 480px;
+
   width: 320px;
 border-top-left-radius: 20px;
 }
 .parc{grid-area: 9/1;
-margin-top: -40px;
+
 }
 
-#c_2{
+.c_2{
   margin-top: 100px;
 grid-area: 1/2;
 margin-top: 50px;
 height: 245px;
 width: 320px;
 box-shadow:3px 3px 5px 6px #f1f1f1;
+
 }
 .image_fort{width: 320px;
-
+height: 190 px;
+contain: content;
+display: flex;
 }
-.pomegue{margin-top: -20px;
 
-}
-
-#c_3{
+.c_3{
 height: 245px;
-margin-top: -5px;
+margin-top:30px;
 width: 320px;
 box-shadow:3px 3px 5px 6px #f1f1f1;
 }
 .image_frioul{ width: 320px;
-  height: 195px;
+  height: 200px;
   margin-top: -5px;
+  contain: content;
+
 }
-#c_5{
-margin-top:30px;
+.c_5{ 
+
+display: iline-grid;
 width: 320px;
-grid-area: 8/2;
-box-shadow:3px 3px 5px 6px #f1f1f1;
-}
-.image_dame{ grid-area: 8/2;
-  margin-top:30px;
-  width: 320px; 
-}
-.notre{grid-area:8/2;
-  margin-top:15rem;
- background-color: #fff;
+margin-top:30px;
 
 }
 
-#c_6{
+.image_dame{
+  width: 320px;
+
+}
+
+
+.c_6{
 
   width: 320px;
   grid-area: 9/2;
-  margin-top: -15.5rem;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+
+margin-top:-17.2rem;
 }
 .image_longchamp{ grid-area: 9/2;
-  margin-top: -15.5rem;
+
   width: 320px; 
 
 }
 .lonchamp{grid-area: 9/2;
-  margin-top:-2.5rem;
+
 
 }
 
@@ -1501,101 +1530,112 @@ aside{grid-area: 50/1;
   
  
  
-  article{height: 1100px;
+  article{height: 1180px;
     width: 815px;
     grid-template-columns: 380px 380px;
   margin-top: 30px;
+
   }
-  #c_1{ 
+  .a_m{margin-left: 20px;
+
+  }
+  
+  .c_1{ 
     width: 360px;
    grid-area: 2/1; 
    box-shadow:3px 3px 5px 6px #f1f1f1; 
+   margin-left: 20px;
+   height: 535px;
   }
   .image_port{ width: 360px;
     border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+ height: 486px;
   }
-  
   .column_3{grid-area:  8/1;
   
   }
-  #c_4{
+  .column_4{grid-area: 8/2;
+  
+  }
+  .c_4{
     grid-area: 8/1;
     width:360px;
-    height: 520px;
-    margin-top:40px ;
+    height: 530px;
+    margin-top:30px ;
     box-shadow:3px 3px 5px 6px #f1f1f1;
     background-color: #fff;
+   
+    margin-left: 20px;
+
   }
   .image_calanque{
-    grid-area: 8/1;
-    margin-top: 30px;
+    height: 470px;
+  
     width: 360px;
   border-top-left-radius: 20px;
   }
   .parc{grid-area: 9/1;
-  margin-top: -40px;
+  
   }
   
-  #c_2{
+  .c_2{
     margin-top: 100px;
   grid-area: 1/2;
   margin-top: 50px;
-  height: 245px;
+  height: 270px;
   width: 360px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
+
   }
   .image_fort{width: 360px;
-  
+  height: 200 px;
+  contain: content;
+  display: flex;
   }
-  .pomegue{margin-top: -20px;
   
-  }
-  
-  #c_3{
+  .c_3{
   height: 245px;
-  margin-top: -5px;
+  margin-top:20px;
   width: 360px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
   }
   .image_frioul{ width: 360px;
-    height: 195px;
+    height: 200px;
     margin-top: -5px;
+    contain: content;
+  
   }
-  #c_5{
-  margin-top:30px;
+  .c_5{ 
+
+  display: iline-grid;
   width: 360px;
-  grid-area: 8/2;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
-  }
-  .image_dame{ grid-area: 8/2;
-    margin-top:30px;
-    width: 360px; 
-  }
-  .notre{grid-area:8/2;
-    margin-top:15rem;
-   background-color: #fff;
+  margin-top:30px;
   
   }
   
-  #c_6{
+  .image_dame{
+    width: 360px;
+  
+  }
+  
+  
+  .c_6{
   
     width: 360px;
     grid-area: 9/2;
-    margin-top: -15.5rem;
-    box-shadow:3px 3px 5px 6px #f1f1f1;
+
+  margin-top:-17.8rem;
+  height: 260px;
   }
   .image_longchamp{ grid-area: 9/2;
-    margin-top: -15.5rem;
+  height: 200px;
     width: 360px; 
   
   }
   .lonchamp{grid-area: 9/2;
-    margin-top:-2.5rem;
   
-
   }
-
 
 
 
@@ -1617,4 +1657,17 @@ aside{grid-area: 50/1;
   }
   
   }
-  
+  @media only screen and (min-width: 871px) and (max-width:1200px){
+       
+
+ 
+    .wapper{width: 1200px;
+      margin: auto;
+
+
+    }
+
+    body{background-color: darkgoldenrod;
+    }
+
+  }
