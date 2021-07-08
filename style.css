@@ -133,21 +133,19 @@ padding-bottom: 1px;
    
 }
  
-.headernav :hover{ cursor: pointer;
-  transition-duration:1.25;
-float: left;
-display: inline-grid;
+.headernav {margin-left:70px;
 
-  background-color: #0065FC;
-
-font: bold;
-
-
+margin-top: -60px;
+font-size: medium;
 
 
 
 }
   .filters{font-weight: bold;
+  margin-top: 60px;
+  display:flex; 
+  margin-left: 10px;
+
  
   }
  .silver{margin-left:20px;
@@ -172,7 +170,6 @@ padding-bottom:10px;
 text-align: center;
 
 }
-
   .family{
   width:40px;
   height: 30px;
@@ -241,27 +238,36 @@ background-color:#DEEBFF;
    margin-right: 10px;      
                  /*image "i" class aside*/
   }       
-            
- .aside{
- margin-left: 5px;
+  
+  .i_f_o{display:flex;
+    margin-left: 10px;
+    }
+
+ .aside{ 
  border: 2px solid  #d9d9d9;
     border-radius: 2rem;
  width: 30px;
  height: 30px;
  background-color: #fff;
  padding-bottom: 5px;
-  align-self:center;
+  
 }
 
 .info{font-size:15px;
-  align-self: center;
+ align-self: center;
  border: none;
 margin-left: 10px;
 }
 
- 
+                                                 
 
+.headernav :hover{ cursor: pointer;
+  transition-duration:.1s;
+float: inline-end;
+  background-color: #0065FC;
+font: bold;
 
+}
  
   
        /*section principal composé de 9 logement*/
@@ -429,7 +435,7 @@ font-size: 20px;
  height: 740px;
  width: 350px;
 grid-template-rows: 50px 210px 30px 210px 30px 210px;
-grid-template-columns: 120px 200px;
+grid-template-columns: 150px 200px;
 margin-top: -20px;
 padding:20px;
 padding-bottom: 30px;
@@ -455,16 +461,18 @@ background-color:#F2F2F2 ;
 .sectiondumatin{width: 350px;
   height: 210px;
   background-color: #fff;
-   border-radius: 15px;
+   border-radius: 20px;
   padding: 5px;
   box-shadow:3px 3px 5px 6px #f1f1f1;
                       /*image hotel*/
 }
 .matin{display:flex;
-  width: 120px; 
+  width: 150px; 
   height: 210px;
+  contain: content;
+border-top-right-radius: 20px;
+border-top-left-radius:20px;
 }
-
 .soleil{ 
 margin-left:180px;
 margin-top:-200px;
@@ -485,15 +493,18 @@ margin-top:50px;
   margin-bottom:10px;
   background-color: #fff;
   grid-area: 4/1;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px; 
   box-shadow:3px 3px 5px 6px #f1f1f1;
 }
          /*image*/
-.eau_2{width: 115px; 
+.eau_2{width: 150px; 
   height: 210px;
  border-color: white;
-margin-top: -7px;
+
+contain: content;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
 }
 
 .hotel_eau{margin-left: 180px;
@@ -511,13 +522,17 @@ margin-top:50px;
 }
 .section_bleu{width: 350px;
   height: 210px;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 5px; background-color: #fff; 
   grid-area: 6/1;
   box-shadow:3px 3px 5px 6px #f1f1f1;
 }                  /*image*/
 .bleu{height: 210px;
-
+  width: 150px;
+ contain: content;
+border-top-right-radius: 20px;
+border-top-left-radius:20px;
+display: flex;
 }
 
 .hotel_bleu{
@@ -544,7 +559,7 @@ grid-template-rows:50px 190px 30px 30px 30px
 190px 50px;
 column-gap:20px;
 border-radius: 20px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
+
 
  }
  
@@ -821,7 +836,7 @@ align-self: stretch;
   
   form{  
     
-  margin-left:-350px;
+  margin-left:-25rem;
   margin-top: 140px;
   border: 2px color #d9d9d9;
   }
@@ -847,64 +862,75 @@ align-self: stretch;
   .headernav{ 
   width: 340px;
   height:280px;
-  align-self: stretch;
+ 
+ margin-left: 10px;
+  }
+  
+     
+  .filters {
+ 
+  margin-left: 5px;
 
   }
-  .eco{
-    margin-top:70px;
-  align-self: flex-start;
-  
-  }    
-  .filters {
-  align-self: flex-start;
-  margin-left: 5px;
-  
+  .eco{margin-top: 20px;
+    
+    margin-left:-38px
   }
-  .silver{align-self: start;
-  margin-top: 70px;
-  margin-left:-70px;
+
+  .silver{margin-top: 20px;
+
+ margin-left:-5px;
   }
   
-  .everybody{align-self: flex-end;
-  margin-left: 172px;
-  margin-top: -61px;
+  .everybody{
+  margin-left: 175px;
+margin-top: -50px;
   }
   
-  .family{margin-top: 78px;
+  .family{margin-top:110px;
   margin-left: 15px;
  
 }
   
-  .romantic{margin-top: -20px;
-  margin-bottom: 25px;
+  .romantic{display:inline-flex;
+
+
   }
-  .heart{margin-left: -5px;
+  .heart{
+ margin-left:-5px;
   }
       
-  .animals{margin-left:-07px;
-  position: relative;
-  
+  .animals{
+margin-left: -5px;
+margin-top: 10px;
   }
   
-  .dog{
-  margin-top: 197px;
-  position: absolute;
-  display:grid;
-   margin-left: -5px;     
+    .dog{  position: absolute;
+
+margin-top: 234px;
+margin-left: -5px;
+      
   padding-left: 10px;
   padding-right: -15px;
   width: 30px;
 
 }
-  
-  .aside{margin-left: -220px;
-  margin-top: 60px;
+  .i_f_o{display: flex;
+    width: 340px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
   }
-    
-  
-  .info{ margin-left: 50px;
-  margin-top:-36px;
-  }
+.aside{margin-top:20px;
+ 
+
+}
+.info{margin-left:40px;
+margin-top: -40px;
+}
+
+
+
   .populaire{margin-left:-13px;
 margin-top: -64rem;
     }
@@ -1208,22 +1234,19 @@ background-size: auto;
   }
 
   .headernav{ 
-    width: 650px;
+    width: 600px;
     height:250px;
  flex-wrap: wrap;
-background-size: auto;
+
   }
 
 
-.aside{display:inline-flex;
- margin-top: 50px;
- margin-left:-250px;
+.i_f_o{
+margin-top: -20px;
 }
 
 
-.info{margin-top: 50px;
 
-}
 
 .populaire{ display:inline-grid;
 margin-left: -21.5rem;
@@ -1231,6 +1254,20 @@ margin-top:-51rem;
 width: 620px;
 }
 
+.eau_2,.matin,.bleu{ width: 250px;
+contain: content;
+
+}
+.hotel_eau,.nuit_eau,.star_eau{margin-left: 320px;
+
+}
+
+ .hotel_bleu,.star_bleu,.nuit_bleu{margin-left: 320px;
+
+
+ }
+ .soleil,.nuitsoleil,.starmatin{margin-left: 320px;
+ }
 .lesplus{ width: 350px;
   height: 50px; 
   font-weight: 800; 
@@ -1427,7 +1464,8 @@ body{width:100%;
 
 }
 
-header{ width: 890px;
+header{ width: 850px;
+  flex-wrap: wrap;
 }
 
   .housing{ grid-area: 2/2;
@@ -1444,28 +1482,41 @@ header{ width: 890px;
   }  
  
   .headernav{ 
-    width: 650px;
+    width: 600px;
     height:250px;
  flex-wrap: wrap;
 
   }
-  .aside{display:inline-flex;
-    margin-top: 50px;
-    margin-left:-250px;
-   }
-   
-   
-   .info{margin-top: 50px;
-   }
+  .i_f_o{
+    margin-top: -20px;
+  
+  }
+
 .populaire{ display:inline-grid;
   margin-left: -25.5rem;
-  margin-top:-53rem; 
+  margin-top:-52rem; 
   width:770px;
 
   }
 
-
+ .eau_2,.matin,.bleu{
+  width: 270px;
+  contain: content;
+ }
  
+.hotel_eau,.nuit_eau,.star_eau{margin-left: 320px;
+
+}
+
+ .hotel_bleu,.star_bleu,.nuit_bleu{margin-left: 320px;
+
+
+ }
+ .soleil,.nuitsoleil,.starmatin{margin-left: 320px;
+
+
+ }
+
   .lesplus{ width: 350px;
     height: 50px; 
     font-weight: 800; 
@@ -1657,7 +1708,7 @@ aside{grid-area: 50/1;
   }
   
   }
-  @media only screen and (min-width: 871px) and (max-width:1200px){
+  @media only screen and (min-width: 871px) and (max-width:1100px){
        
 
  
@@ -1670,4 +1721,315 @@ aside{grid-area: 50/1;
     body{background-color: darkgoldenrod;
     }
 
-  }
+    header{ width: 1100px;
+    }
+    
+      .housing{ grid-area: 1/3;
+      
+      
+      } 
+      
+      .activity{ grid-area: 1/4;
+   
+      
+      }
+      .register{  grid-area :1/5;
+     
+      }  
+     
+      .headernav{ 
+        width: 1100px;
+        height:250px;
+     flex-wrap: wrap;
+    
+      }
+
+      .i_f_o{display: flex;
+               margin-top: -8rem;
+   
+      
+
+       
+    
+       
+       
+     
+       }
+    .populaire{ display:inline-grid;
+      margin-left: -22.5rem;
+      margin-top:-52rem; 
+      width:1000px;
+    
+      }
+    
+    
+     
+      .lesplus{ width: 350px;
+        height: 50px; 
+        font-weight: 800; 
+       margin-top: 8px;
+  
+      }
+      .anchor{ display:flex;
+        width: 30px;
+        height: 30px;
+        grid-area: 1/2;
+      margin-left:50rem; 
+      background-color:#F2F2F2 ;    
+      
+      }
+      section{ margin-top: 52rem;
+        height:700px;
+        width: 1000px;
+        grid-template-columns:312px 312px 312px;
+        column-gap:  2rem;
+        grid-template-rows: 50px 1fr 30px  1fr 50px;
+        
+      }
+      .sectiondumatin{width:980px;
+      
+      }
+      
+      .section_eau{width: 980px;
+      }
+      
+      .eau_2{width: 300px;
+      contain: content;                 
+      }
+
+      .hotel_eau{margin-left: 350px;
+        margin-top: -200px;
+      }
+              
+      .nuit_eau{margin-left: 350px;
+      
+      }
+      .star_eau{width: 150px;
+        height: 40px;  
+       margin-left: 350px;
+      margin-top:50px;
+
+      }
+
+
+      .section_bleu{width: 980px;
+      }
+        
+      .bleu{width: 300px;
+        display: flex;                    
+         contain: content;
+      }
+           
+     
+      
+      
+      
+      
+      
+      
+      .hotel_bleu{margin-left: 350px;
+          border-top-left-radius:  20px;
+      
+          
+      }
+      
+     
+     .nuit_bleu{ margin-left:350px;
+                                                           
+     }
+     .star_bleu{width: 150px;
+       height: 40px;  
+      margin-left: 350px;
+     margin-top:50px;
+       }
+
+
+      .matin{ width: 300px;
+        border-top-left-radius: 20px;
+        contain: content;
+      }
+      .soleil{ 
+        margin-left:350px;
+        margin-top:-200px;
+        
+        }  /*paragraphe*/
+        .nuitsoleil{margin-left: 350px;
+          
+        }
+        .starmatin{width: 150px;
+          height: 40px;  
+         margin-left: 350px;
+        margin-top:50px; 
+        }
+      .sectionmouettes{ grid-area: 4/3;
+     
+      width: 300px;
+      contain: content;
+      }
+      .hotelmouettes{
+        width: 300px; 
+      }
+      
+.sectionlamer{grid-area: 4/1;
+  
+}
+
+.sectionpanier{grid-area: 4/2;
+
+}
+      .sectionamina{ 
+       grid-area: 2/3;
+      width: 300px;
+      
+      }
+      .hotelamina{
+      width: 300px;
+      }
+      .sectioncannebiere,.auberge{
+        width: 300px;
+      } 
+      .sectionport,.hotelport{ width: 300px;
+      
+      }
+      
+      .sectionlamer,.hotelamer{ width: 300px;
+        
+      }
+      .sectionpanier,.aubergepanier{ width: 300px;
+      }
+    aside{grid-area: 50/1;
+    
+    }
+      
+     article{
+    
+        width: 1050px;
+        height: 700px;
+        grid-template-columns: 250px  240px  250px  240px;   
+      
+        grid-template-rows: 50px 200px 30px 30px 200px 50px;
+     }
+      .a_m{font: size 12px;
+        margin-left: 10px;
+    flex-wrap: nowrap;
+          
+      }
+      
+      .c_1{ 
+        width: 250px;
+       grid-area: 2/1; 
+       box-shadow:3px 3px 5px 6px #f1f1f1; 
+    
+       height: 510px;
+       background-color: #0065FC;
+      }
+      .image_port{ width: 250px;
+        border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+     height: 400px;
+   
+     
+   
+    
+      
+      }
+      .c_4{
+        grid-area: 5/2;
+        width:250px;
+        height: 510px;
+     
+        box-shadow:3px 3px 5px 6px #f1f1f1;
+        background-color:yellow
+     
+    
+      }
+      .image_calanque{
+        height: 400px;
+      
+        width: 250px;
+      border-top-left-radius: 20px;
+      }
+      .parc{grid-area:6/3;
+      
+      }
+      
+      .c_2{
+        margin-top: 100px;
+      grid-area: 1/2;
+      margin-top: 50px;
+      height: 200px;
+      width: 240;
+      box-shadow:3px 3px 5px 6px #f1f1f1;
+    
+      }
+      .image_fort{width: 240px;
+      height: 200 px;
+      contain: content;
+      display: flex;
+      }
+      
+      .c_3{
+      height: 200px;
+      margin-top:20px;
+      width: 240px;
+      box-shadow:3px 3px 5px 6px #f1f1f1;
+      }
+      .image_frioul{ width: 240px;
+        height: 200px;
+        margin-top: -5px;
+        contain: content;
+      
+      }
+      .c_5{ 
+    
+      width: 250px;
+      margin-top:50px;
+
+      
+      }
+      
+      .image_dame{
+        width: 250px;
+      
+      }
+      .notre{margin-left: -10px;
+
+      }
+      
+      .c_6{
+      
+        width: 240px;
+        grid-area: 5/4;
+    
+     
+      height: 200px;
+      }
+      .image_longchamp{ grid-area: 5/4;
+      height: 200px;
+        width: 240px; 
+      
+      }
+      .lonchamp{grid-area: 9/2;
+      
+      }
+    
+    
+    
+    
+      
+      footer{width: 815px;
+      height: 230px;
+      flex-wrap: wrap;
+      margin-top:70px;
+      }
+      .p_1,.p_2{margin-left: 10px;
+      
+      }
+      .h_2,.h_3{ margin-left: 30px;
+      
+      }
+      .a_3,.a_4{margin-left: 50px;
+      
+      }
+
+    }
