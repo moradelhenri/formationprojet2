@@ -7,7 +7,7 @@
 .wapper {width: 1440px;
 height: 2094;
   margin: auto;
-  border: solid black 1 px;
+
 }
 
 
@@ -780,7 +780,7 @@ color: black;
    
 @media only screen and (min-width: 300px) and (max-width: 480px){
  .wapper{ width: 480px;
-  height: 2094px;
+  height: auto;
   margin: auto;
 
  }
@@ -1206,6 +1206,7 @@ margin-left: 10px;
 @media only screen and (min-width: 481px) and (max-width: 720px){
  .wapper{ width: 720px;
   margin: auto;
+  height: auto;
 
  } 
 
@@ -1455,6 +1456,7 @@ flex-wrap: wrap;
 
 
 .wapper{width: 870px;
+  height: auto;
   margin: auto;
 
 }
@@ -1712,13 +1714,14 @@ aside{grid-area: 50/1;
        
 
  
-    .wapper{width: 1200px;
+    .wapper{width: 1100px;
       margin: auto;
+      height: auto;
 
 
     }
 
-    body{background-color: darkgoldenrod;
+    body{max-width:auto;
     }
 
     header{ width: 1100px;
@@ -1756,10 +1759,10 @@ aside{grid-area: 50/1;
      
        }
     .populaire{ display:inline-grid;
-      margin-left: -22.5rem;
+      margin-left: -22.7rem;
       margin-top:-52rem; 
       width:1000px;
-    
+   
       }
     
     
@@ -1778,13 +1781,13 @@ aside{grid-area: 50/1;
       background-color:#F2F2F2 ;    
       
       }
-      section{ margin-top: 52rem;
+      section{ 
         height:700px;
         width: 1000px;
         grid-template-columns:312px 312px 312px;
         column-gap:  2rem;
         grid-template-rows: 50px 1fr 30px  1fr 50px;
-        
+        margin-top: 52rem;
       }
       .sectiondumatin{width:980px;
       
@@ -1904,10 +1907,11 @@ aside{grid-area: 50/1;
      article{
     
         width: 1050px;
-        height: 700px;
+        height: 610px;
         grid-template-columns: 250px  240px  250px  240px;   
-      
+       background-color: #fff;
         grid-template-rows: 50px 200px 30px 30px 200px 50px;
+        margin-left:5px ;
      }
       .a_m{font: size 12px;
         margin-left: 10px;
@@ -1921,13 +1925,13 @@ aside{grid-area: 50/1;
        box-shadow:3px 3px 5px 6px #f1f1f1; 
     
        height: 510px;
-       background-color: #0065FC;
+     
       }
       .image_port{ width: 250px;
         border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-     height: 400px;
-   
+     height: 460px;
+  
      
    
     
@@ -1937,77 +1941,90 @@ aside{grid-area: 50/1;
         grid-area: 5/2;
         width:250px;
         height: 510px;
-     
+    
         box-shadow:3px 3px 5px 6px #f1f1f1;
-        background-color:yellow
+      
      
     
       }
       .image_calanque{
-        height: 400px;
-      
+        height: 460px;
+     
         width: 250px;
       border-top-left-radius: 20px;
       }
-      .parc{grid-area:6/3;
-      
+      .parc{
+       display: inline-grid;
+       margin-top:3px;
       }
       
       .c_2{
-        margin-top: 100px;
-      grid-area: 1/2;
-      margin-top: 50px;
-      height: 200px;
-      width: 240;
+      
+      grid-area: 2/2;
+     contain: size;
+      height: 250px;
+     width: 240px;
       box-shadow:3px 3px 5px 6px #f1f1f1;
     
+     
+      border-radius: 20px;
       }
       .image_fort{width: 240px;
-      height: 200 px;
-      contain: content;
-      display: flex;
+     display:inline-grid;
+    height: 200px;
+    
+      }
+      .pomegue{ 
+      display:grid;
+    
       }
       
       .c_3{
-      height: 200px;
-      margin-top:20px;
+      height: 240px;
       width: 240px;
       box-shadow:3px 3px 5px 6px #f1f1f1;
+      contain: size;
+   
+         display: inline-grid;
       }
       .image_frioul{ width: 240px;
-        height: 200px;
-        margin-top: -5px;
+        height: 190px;
+        grid-area: 5/2;
         contain: content;
-      
+    
+      }
+      .frioul{ grid-area: 6/2;  
+        display: inline-grid;    
+  
       }
       .c_5{ 
     
       width: 250px;
       margin-top:50px;
-
-      
+      contain: size;
+    
       }
       
       .image_dame{
         width: 250px;
-      
+       height: 200px;
       }
-      .notre{margin-left: -10px;
+      .notre{margin-left: 2px;
 
       }
       
       .c_6{
-      
-        width: 240px;
+       margin-top: 10px;
+        width: 250px;
         grid-area: 5/4;
-    
+   
      
-      height: 200px;
+      height: 240px;
       }
       .image_longchamp{ grid-area: 5/4;
-      height: 200px;
-        width: 240px; 
-      
+      height: 190px;
+        width: 250px; 
+   
       }
       .lonchamp{grid-area: 9/2;
       
@@ -2017,10 +2034,10 @@ aside{grid-area: 50/1;
     
     
       
-      footer{width: 815px;
-      height: 230px;
+      footer{width: 1050px;
+      height: 200px;
       flex-wrap: wrap;
-      margin-top:70px;
+      margin-top:40px;
       }
       .p_1,.p_2{margin-left: 10px;
       
