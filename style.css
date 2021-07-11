@@ -800,9 +800,9 @@ color: black;
 
 }
 
-@media only screen and (min-width: 200px) and (max-width:400px){
+@media only screen and (min-width: 200px) and (max-width:379px){
 
-  .wapper{width:400px;
+  .wapper{width:379px;
     height: auto;
     margin: auto;
   }
@@ -1257,7 +1257,7 @@ margin-top:-20px;
 
 
    
-@media only screen and (min-width: 401px) and (max-width: 480px){
+@media only screen and (min-width: 380px) and (max-width: 480px){
  .wapper{ width: 480px;
   height: auto;
   margin: auto;
