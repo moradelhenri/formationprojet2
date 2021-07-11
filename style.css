@@ -2,101 +2,87 @@
    font-family:"Raleway";
    src: url("Raleway/Raleway-VariableFont_wght.ttf");
  }
-  
-
-.wapper {width: 1440px;
-height: 2094;
+ .wapper {
+  width: 1440px;
+  height: 2125;
   margin: auto;
-
 }
 
+body {
+  min-width: auto;
 
-
-  body{ min-width: auto;
-  
-  
   height: 100vh;
- margin: 0;
- padding: 0;
- font-family: "Raleway", "sans Serif"; 
- font-weight: 500;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "sans Serif";
+  font-weight: 500;
+}
 
-  }
+header {
+  display: grid;
+  max-width: auto;
+  height: 60px;
+  margin-left: 10px;
+  grid-template-rows: 30px 30px;
+  grid-template-columns: repeat(6, 200px);
+  margin-top: 10px;
+}
 
-
-
-  header{ display:grid; 
-    max-width:auto;
-        height:60px;
-    margin-left: 10px;
-   grid-template-rows: 30px 30px;
-   grid-template-columns:repeat( 6, 200px);
-   margin-top: 10px;
- 
-  }
-
-
-  .logo{ margin-top:-10px ;
+.logo {
+  margin-top: -10px;
   grid-area: 1/1;
-  }
-  .housing{  grid-area: 1/4;
-   margin-left: 150px;
+}
+.housing {
+  grid-area: 1/4;
+  margin-left: 150px;
   font-size: 20px;
   margin-top: 10px;
+}
 
-  }
-
-  .housing:hover{ 
-    color:#0065FC ;
- text-decoration: overline;
- 
- 
- 
-  
-
-  
-  }
-.activity {grid-area: 1/5;
-    margin-left: 150px;
-    margin-top: 10px;
-    font-size: 20px;
-      }
- .activity:hover{color: #0065FC;
+.housing:hover {
+  color: #0065fc;
   text-decoration: overline;
+}
+.activity {
+  grid-area: 1/5;
+  margin-left: 150px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.activity:hover {
+  color: #0065fc;
+  text-decoration: overline;
+}
 
+.register {
+  grid-area: 1/6;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #0065fc;
+}
 
- }
-
-  
-  .register{grid-area: 1/6;
-    margin-left: 100px;
-    margin-top: 10px;
-    font-size: 20px;
-    color: #0065FC;
-
-  }          
- 
-    
-  nav{ width: 900px;
-    height: 140px;
+nav {
+  width: 900px;
+  height: 140px;
   display: inline-flex;
   flex-direction: column;
-  margin-left: 10px;    
-  
-}    /*h1 et aside class à prévoir
+  margin-left: 10px;
+} /*h1 et aside class à prévoir
          pour petite resolution*/
-        
 
- form{ margin-top: 15px;
+form {
+  margin-top: 15px;
   display: inline-flex;
   max-width: 100%;
   overflow: auto;
- 
- }
- .loupe{display: none;
- }
- /*Rechercher  prevoir loupe pour media tel */ 
-#plan{  background-color: #0065FC;
+}
+.loupe {
+  display: none;
+}
+/*Rechercher  prevoir loupe pour media tel */
+#plan {
+  background-color: #0065fc;
   color: white;
   font-weight: bold;
   border: none;
@@ -105,2427 +91,2388 @@ height: 2094;
   font-size: 1rem;
   cursor: pointer;
   padding-left: 1.5rem;
-  padding-right:1.5rem;
-
- } 
- .canebiere{border-right: none;
+  padding-right: 1.5rem;
+}
+.canebiere {
+  border-right: none;
   border-left: none;
-  border-top: #F2F2F2 1px solid;
-  border-bottom: #F2F2F2 1px solid;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
   padding: 0 1.5rem;
   width: 14rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Raleway","Sans serif";  
- 
-
- }                       /*icone réprésentant une goutte*/
-  .eau{border-bottom-left-radius: 17px;
-border: 2px solid  #d9d9d9;
-margin-right: -2px;
+  font-family: "Raleway", "Sans serif";
+} /*icone réprésentant une goutte*/
+.eau {
+  border-bottom-left-radius: 17px;
+  border: 2px solid #d9d9d9;
+  margin-right: -2px;
   padding-top: 6px;
-border-top-left-radius: 17px;
-  background-color:#d9d9d9;
- padding-left: 3px;
-padding-bottom: 1px;
-}                                   /*filtres*/
-        
- 
-  .headernav{
+  border-top-left-radius: 17px;
+  background-color: #d9d9d9;
+  padding-left: 3px;
+  padding-bottom: 1px;
+} /*filtres*/
+
+.headernav {
   width: 860px;
   height: 180px;
-  display:flex ;
+  display: flex;
   flex-direction: row;
-  align-items:baseline;  
+  align-items: baseline;
   margin-left: 10px;
   margin-top: 20px;
   flex-wrap: wrap;
-   
 }
- 
-.headernav {margin-left:70px;
 
-margin-top: -60px;
-font-size: medium;
+.headernav {
+  margin-left: 70px;
 
-
-
+  margin-top: -60px;
+  font-size: medium;
 }
-  .filters{font-weight: bold;
+.filters {
+  font-weight: bold;
   margin-top: 60px;
-  display:flex; 
+  display: flex;
   margin-left: 10px;
-
- 
-  }
- .silver{margin-left:20px;
+}
+.silver {
+  margin-left: 20px;
   width: 30px;
-  height: 30px; 
-padding-top: 10px;
-padding-left: 10px;
-margin-top:30px ;
-border-radius: 2rem; 
-background-color:#DEEBFF;
- float: inline-end;
- }
-.eco{
-border: 2px solid  #d9d9d9;
-border-radius: 2rem;
-font-weight:bold;
-margin-left: -40px;
-width: 120px;
-padding-left:40px;
-padding-top:10px ;
-padding-bottom:10px;
-text-align: center;
-
-}
-  .family{
-  width:40px;
   height: 30px;
- margin-left: 20px;
- text-align: center;
-margin-top:10px;
-padding-top: 10px;
-border-radius: 2rem;
-background-color:#DEEBFF ;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 30px;
+  border-radius: 2rem;
+  background-color: #deebff;
+  float: inline-end;
 }
-  
-.everybody {border: 2px solid  #d9d9d9;
-  border-radius: 2rem;  
-  font-weight:bold;
+.eco {
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  font-weight: bold;
   margin-left: -40px;
   width: 120px;
-  padding-left:40px;
-  padding-top:10px ;
-  padding-bottom:10px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
- 
 }
-
-.heart{width:40px;
+.family {
+  width: 40px;
   height: 30px;
- margin-left: 20px;
- text-align: center;
-margin-top:10px;
-padding-top: 10px;
-border-radius: 2rem;
-background-color:#DEEBFF ;
-
+  margin-left: 20px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-radius: 2rem;
+  background-color: #deebff;
 }
 
-.romantic{border: 2px solid  #d9d9d9;
-  border-radius: 2rem;  
-  font-weight:bold;
+.everybody {
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  font-weight: bold;
   margin-left: -40px;
   width: 120px;
-  padding-left:40px;
-  padding-top:10px ;
-  padding-bottom:10px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
-
 }
-.dog{width:40px;
+
+.heart {
+  width: 40px;
   height: 30px;
- margin-left: 20px;
- text-align: center;
-margin: top 25px;
-padding-top: 10px;
-border-radius: 2rem; 
-flex-wrap: wrap;
-background-color:#DEEBFF;
-
+  margin-left: 20px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-radius: 2rem;
+  background-color: #deebff;
 }
-.animals{border: 2px solid  #d9d9d9;
-  border-radius: 2rem;   
-  font-weight:bold;
+
+.romantic {
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  font-weight: bold;
+  margin-left: -40px;
+  width: 120px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.dog {
+  width: 40px;
+  height: 30px;
+  margin-left: 20px;
+  text-align: center;
+  margin: top 25px;
+  padding-top: 10px;
+  border-radius: 2rem;
+  flex-wrap: wrap;
+  background-color: #deebff;
+}
+.animals {
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  font-weight: bold;
   margin-left: -40px;
   width: 170px;
-  padding-left:40px;
-  padding-top:10px ;
-  padding-bottom:10px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
-   margin-right: 10px;      
-                 /*image "i" class aside*/
-  }       
-  
-  .i_f_o{display:flex;
-    margin-left: 10px;
-    }
-
- .aside{ 
- border: 2px solid  #d9d9d9;
-    border-radius: 2rem;
- width: 30px;
- height: 30px;
- background-color: #fff;
- padding-bottom: 5px;
-  
+  margin-right: 10px;
+  /*image "i" class aside*/
 }
 
-.info{font-size:15px;
- align-self: center;
- border: none;
-margin-left: 10px;
+.i_f_o {
+  display: flex;
+  margin-left: 10px;
 }
 
-                                                 
-
-.headernav :hover{
-cursor: pointer;
-color: #0065FC;
-  
- 
-
- 
-font: bold;
-
-
-
-
+.aside {
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  padding-bottom: 5px;
 }
- 
-  
-       /*section principal composé de 9 logement*/
-section{display:inline-grid;
-  grid-template-columns: repeat( 3, 230px );
-  grid-template-rows:50px 150px 90px 40px 30px 150px 90px 30px 80px; 
-   column-gap: 30px;
-   background-color:#F2F2F2;
-   margin-left: 10px;padding: 20px;
-   padding-bottom: 38px;
-   border-radius: 15px;
-    margin-top: 40px;
-  
-  }
-  section :hover{ transform:scale(1.020);
-   
-    transition-duration: 1s;
- 
- 
-  
-  }
 
-.hebergement{ width: 350px;    /* hebergement a marseille*/
- margin-top: 8px;
- display:flex;
-font-weight: bold;
-flex-wrap: nowrap;
- }
+.info {
+  font-size: 15px;
+  align-self: center;
+  border: none;
+  margin-left: 10px;
+}
 
-.sectioncannebiere{ 
+.headernav :hover {
+  cursor: pointer;
+  color: #0065fc;
+
+  font: bold;
+}
+
+/*section principal composé de 9 logement*/
+section {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 230px);
+  grid-template-rows: 50px 150px 90px 40px 30px 150px 90px 30px 80px;
+  column-gap: 30px;
+  background-color: #f2f2f2;
+  margin-left: 10px;
+  padding: 20px;
+  padding-right: 30px;
+  padding-bottom: 38px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+section :hover {
+  transform: scale(1.02);
+
+  transition-duration: 1s;
+}
+
+.hebergement {
+  width: 350px; /* hebergement a marseille*/
+  margin-top: 8px;
+  display: flex;
+  font-weight: bold;
+  flex-wrap: nowrap;
+}
+
+.sectioncannebiere {
   width: 225px;
   height: 280px;
-background-color:  #fff;
- grid-area:2/1; 
- border-radius: 20px;
- padding-left: 5px;
- padding-right: 5px;
- padding-top: 5px;
- box-shadow:3px 3px 5px 6px #f1f1f1;
+  background-color: #fff;
+  grid-area: 2/1;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
 }
-.auberge{background-color:   #fff;
- border-top-left-radius: 20px;  /*image auberge*/
-border-top-right-radius: 20px;
+.auberge {
+  background-color: #fff;
+  border-top-left-radius: 20px; /*image auberge*/
+  border-top-right-radius: 20px;
 
-display: flex;
-height: 150px;
-width:225px;
-background-size: cover;
-contain:content;
-border-top-right-radius: 20px;
-border-top-left-radius: 20px;
-}
- 
-.sectionlamer{width:225px;
-  height: 280px;
-background-color:  #fff;
-grid-area: 6/1;
-padding-left: 5px;
- padding-right: 5px;
- padding-top: 5px;
- border-radius: 20px;
- box-shadow:3px 3px 5px 6px #f1f1f1;
-}
-.hotelamer{
-  background-color:  #fff;   /*image*/
   display: flex;
   height: 150px;
-  width:225px;
+  width: 225px;
   background-size: cover;
-  contain:content;
+  contain: content;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-
 }
-.sectionport{width:225px;
+
+.sectionlamer {
+  width: 225px;
   height: 280px;
-background-color:  #fff;
-padding-left: 5px;
- padding-right: 5px;
- padding-top: 5px;
- border-radius: 20px;
-grid-area:2/2 ;
-box-shadow:3px 3px 5px 6px #f1f1f1;
+  background-color: #fff;
+  grid-area: 6/1;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
 }
-
-.hotelport{background-color:  #fff; /*image*/
-
-display: flex;
-height: 150px;
-width:225px;
-background-size: cover;
-contain:content;
-border-top-right-radius: 20px;
-border-top-left-radius: 20px;
+.hotelamer {
+  background-color: #fff; /*image*/
+  display: flex;
+  height: 150px;
+  width: 225px;
+  background-size: cover;
+  contain: content;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
-
-
-.sectionpanier{width:230px;
+.sectionport {
+  width: 225px;
   height: 280px;
-background-color:  #fff;
- padding-top: 5px;
- padding-left: 5px;
- padding-right: 5px;
- border-radius: 20px;
-grid-area: 6/2;
-box-shadow:3px 3px 5px 6px #f1f1f1;
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  border-radius: 20px;
+  grid-area: 2/2;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
 }
 
-.aubergepanier{display: flex;
-                                 /*image*/
-background-color:  #fff;
-height: 154px;
-width: 225px;
-display: flex;
-width:225px;
-background-size: cover;
-contain:content;
-border-top-right-radius: 20px;
-border-top-left-radius: 20px;
+.hotelport {
+  background-color: #fff; /*image*/
 
+  display: flex;
+  height: 150px;
+  width: 225px;
+  background-size: cover;
+  contain: content;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
-.sectionmouettes{width:225px;
+.sectionpanier {
+  width: 230px;
   height: 280px;
-background-color: #fff;
-grid-area:2/3 ;
- padding-top: 5px;
- border-radius: 20px;
-padding-left: 5px;
-padding-right: 5px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
+  background-color: #fff;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+  grid-area: 6/2;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
 }
-.hotelmouettes{display: flex;/*image*/
+
+.aubergepanier {
+  display: flex;
+  /*image*/
+  background-color: #fff;
+  height: 154px;
+  width: 225px;
+  display: flex;
+  width: 225px;
+  background-size: cover;
+  contain: content;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.sectionmouettes {
+  width: 225px;
+  height: 280px;
+  background-color: #fff;
+  grid-area: 2/3;
+  padding-top: 5px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+}
+.hotelmouettes {
+  display: flex; /*image*/
   width: 225px;
 
-display: flex;
-height: 150px;
-background-size: cover;
-contain:content;
-border-top-right-radius: 20px;
-border-top-left-radius: 20px;
+  display: flex;
+  height: 150px;
+  background-size: cover;
+  contain: content;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
-
-.sectionamina{width:230px;
+.sectionamina {
+  width: 230px;
   height: 280px;
-background-color: #fff;
- grid-area: 6/3;
- padding-top: 5px;
- border-radius: 20px;
-padding-left: 5px;
- padding-right: 5px;
- box-shadow:3px 3px 5px 6px #f1f1f1;
- display:flex;
+  background-color: #fff;
+  grid-area: 6/3;
+  padding-top: 5px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+  display: flex;
 }
-.hotelamina{
+.hotelamina {
   height: 155px;
-  width:228px;
+  width: 228px;
 
   contain: content;
   display: flex;
   border-top-left-radius: 20px;
- border-top-right-radius:40px;
+  border-top-right-radius: 40px;
 }
 
-aside{ grid-area: 10/1;
-font-size: 20px;
-
+aside {
+  grid-area: 10/1;
+  font-size: 20px;
 }
 
 /* section 2 =3 logement "populaire" */
-.populaire{display: inline-grid;
- height: 740px;
- width: 350px;
-grid-template-rows: 50px 210px 30px 210px 30px 210px;
-grid-template-columns: 150px 200px;
-margin-top: -20px;
-padding:20px;
-padding-bottom: 30px;
-background-color:#F2F2F2;
-margin-left: 550px;
-border-radius: 20px;
+.populaire {
+  display: inline-grid;
+  height: 740px;
+  width: 360px;
+  grid-template-rows: 50px 210px 30px 210px 30px 210px;
+  grid-template-columns: 150px 200px;
+  margin-top: -20px;
+  padding: 20px;
 
+  padding-bottom: 30px;
+  background-color: #f2f2f2;
+  margin-left: 550px;
+  border-radius: 20px;
 }
 
-.lesplus{ width: 350px;
-  height: 50px; 
-  font-weight: 800; 
- margin-top: 8px;
+.lesplus {
+  width: 350px;
+  height: 50px;
+  font-weight: 800;
+  margin-top: 8px;
 }
-.anchor{ display:flex;
+.anchor {
+  display: flex;
   width: 30px;
   height: 30px;
   grid-area: 1/2;
-margin-left: 150px; 
-background-color:#F2F2F2 ;           
-                     /*hotel du matin*/
+  margin-left: 150px;
+  background-color: #f2f2f2;
+  /*hotel du matin*/
 }
-.sectiondumatin{width: 350px;
+.sectiondumatin {
+  width: 350px;
   height: 210px;
   background-color: #fff;
-   border-radius: 20px;
+  border-radius: 20px;
   padding: 5px;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
-                      /*image hotel*/
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+  /*image hotel*/
 }
-.matin{display:flex;
-  width: 150px; 
+.matin {
+  display: flex;
+  width: 150px;
   height: 210px;
   contain: content;
-border-top-left-radius: 20px;
-border-bottom-left-radius:20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
-.soleil{ 
-margin-left:180px;
-margin-top:-200px;
-
-}  /*paragraphe*/
-.nuitsoleil{margin-left: 180px;
-  
+.soleil {
+  margin-left: 180px;
+  margin-top: -200px;
+} /*paragraphe*/
+.nuitsoleil {
+  margin-left: 180px;
 }
-.starmatin{width: 150px;
-  height: 40px;  
- margin-left: 180px;
-margin-top:50px;
-
+.starmatin {
+  width: 150px;
+  height: 40px;
+  margin-left: 180px;
+  margin-top: 50px;
 }
-               /*section hotel de l'eau*/
-.section_eau{width: 350px;
+/*section hotel de l'eau*/
+.section_eau {
+  width: 350px;
   height: 210px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   background-color: #fff;
   grid-area: 4/1;
   border-radius: 20px;
-  padding: 5px; 
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+  padding: 5px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
 }
-         /*image*/
-.eau_2{width: 150px; 
+/*image*/
+.eau_2 {
+  width: 150px;
   height: 210px;
- border-color: white;
+  border-color: white;
 
-contain: content;
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
+  contain: content;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
-.hotel_eau{margin-left: 180px;
+.hotel_eau {
+  margin-left: 180px;
   margin-top: -200px;
 }
-        
-.nuit_eau{margin-left: 180px;
 
+.nuit_eau {
+  margin-left: 180px;
 }
-.star_eau{width: 150px;
-  height: 40px;  
- margin-left: 180px;
-margin-top:50px;
- 
+.star_eau {
+  width: 150px;
+  height: 40px;
+  margin-left: 180px;
+  margin-top: 50px;
 }
-.section_bleu{width: 350px;
+.section_bleu {
+  width: 350px;
   height: 210px;
   border-radius: 20px;
-  padding: 5px; background-color: #fff; 
+  padding: 5px;
+  background-color: #fff;
   grid-area: 6/1;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
-}                  /*image*/
-.bleu{height: 210px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+} /*image*/
+.bleu {
+  height: 210px;
   width: 150px;
- contain: content;
-border-bottom-left-radius: 20px;
-border-top-left-radius:20px;
-display: flex;
+  contain: content;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
 }
 
-.hotel_bleu{
-   margin-left:180px;
-   margin-top:-190px;
+.hotel_bleu {
+  margin-left: 180px;
+  margin-top: -190px;
 }
-.nuit_bleu{ margin-left:180px;
-  
+.nuit_bleu {
+  margin-left: 180px;
 }
-.star_bleu{width: 150px;
-  height: 40px;  
- margin-left: 180px;
-margin-top:50px;
-
+.star_bleu {
+  width: 150px;
+  height: 40px;
+  margin-left: 180px;
+  margin-top: 50px;
 }
-article{display:inline-grid;  /*partie activité à marseille*/
+article {
+  display: inline-grid; /*partie activité à marseille*/
   width: 1210px;
   height: 570px;
-background-color: #fff;
-margin-top: 50px;
-margin-left: 10px;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows:50px 190px 30px 30px 30px
-190px 50px;
-column-gap:20px;
-border-radius: 20px;
-
-
- }
- article a:hover{ transform:scale(1.015);
-   transition-duration: 4s;
- }
- 
- .c_1 {
-   height: 520px;
-   width: 295px;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-left: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:
+    50px 190px 30px 30px 30px
+    190px 50px;
+  column-gap: 20px;
   border-radius: 20px;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+}
+article a:hover {
+  transform: scale(1.015);
+  transition-duration: 4s;
+}
+
+.c_1 {
+  height: 520px;
+  width: 295px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
 
   display: inline-grid;
-  margin-top:-9px;
- }
+  margin-top: -9px;
+}
 
- 
-
-
- 
-
-
-
-
-.a_m{font-weight:bolder;
+.a_m {
+  font-weight: bolder;
   margin-top: 10px;
 }
- 
- /*activités à marseille*/
-.image_port{                   /*column_1*/
-grid-area: 2/1;
-border-top-left-radius: 20px;
- height: 470px;
- width: 295px;
- contain: content;
 
-
-    }
-
-    .v_1{grid-area: 7/1;
-      margin-left: 10px;
-    font-weight: 800;
-   margin-top: 15px;
- 
-    }
-.column_1{grid-area: 1/1;
-
+/*activités à marseille*/
+.image_port {
+  /*column_1*/
+  grid-area: 2/1;
+  border-top-left-radius: 20px;
+  height: 470px;
+  width: 295px;
+  contain: content;
 }
 
- .column_2{grid-area: 1/2;
-
- }
- .column_3{grid-area: 1/3;
-
- } 
-.column_4{grid-area: 1/4;
-
+.v_1 {
+  grid-area: 7/1;
+  margin-left: 10px;
+  font-weight: 800;
+  margin-top: 15px;
 }
-  
+.column_1 {
+  grid-area: 1/1;
+}
 
-  .c_2{width: 285px;
-height:230px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
-border-radius: 20px;
+.column_2 {
+  grid-area: 1/2;
+}
+.column_3 {
+  grid-area: 1/3;
+}
+.column_4 {
+  grid-area: 1/4;
+}
 
-margin-top: 50px;
-display: inline-grid;
+.c_2 {
+  width: 285px;
+  height: 230px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+  border-radius: 20px;
 
-  
-  }
-    /*column_2*/
- .image_fort{
- width: 285px;
- height: 220 px;
+  margin-top: 50px;
+  display: inline-grid;
+}
+/*column_2*/
+.image_fort {
+  width: 285px;
+  height: 220 px;
 
   border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-contain:content;
-
-
+  border-top-right-radius: 20px;
+  contain: content;
 }
 
-.pomegue{margin-left: 15px;
+.pomegue {
+  margin-left: 15px;
 
- font-weight:800;
- margin-top: 15px;
+  font-weight: 800;
+  margin-top: 15px;
 }
 
-.c_3{width: 285px;
+.c_3 {
+  width: 285px;
   height: 270px;
-display: inline grid;
-margin-top: 20px; 
-box-shadow:3px 3px 5px 6px #f1f1f1;
-border-radius: 20px;  
-display:inline-grid;
-
-
+  display: inline grid;
+  margin-top: 20px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+  border-radius: 20px;
+  display: inline-grid;
 }
-.image_frioul{ 
-height: 220px;
-width: 285px;
-contain: content;
-border-top-left-radius:20px;
-border-top-right-radius:20px;
-display:inline-grid;
-grid-area: 6/2;
+.image_frioul {
+  height: 220px;
+  width: 285px;
+  contain: content;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: inline-grid;
+  grid-area: 6/2;
 }
-.frioul{ margin-left:15px ;
-font-weight: 800;
-margin-top:15px;
-grid-area: 7/2;
-
+.frioul {
+  margin-left: 15px;
+  font-weight: 800;
+  margin-top: 15px;
+  grid-area: 7/2;
 }
-.c_4{ width: 290px;
-  height: 520px; 
-box-shadow:3px 3px 5px 6px #f1f1f1;
-border-radius: 20px;
-display: inline-grid;
-
-margin-top: 50px;
-}
-
-.image_calanque{        /*column_3*/
- 
- width: 290px;
- height:470px ;
- contain:content;
- border-top-left-radius: 20px;
- border-top-right-radius: 20px;
-
-display: flex;
-}
-.parc{
-  margin-left: 10px;
- font-weight: 800; 
-margin-top: 15px;
-
-} 
-.c_5{ width: 288px;
-  height: 250px;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+.c_4 {
+  width: 290px;
+  height: 520px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
   border-radius: 20px;
   display: inline-grid;
 
-margin-top: 50px;
-}                          /*column_4*/
-.image_dame{
- width: 288px;
- height: 195px;
- contain: content;
- border-top-left-radius: 20px;
-  border-top-right-radius: 20px; 
+  margin-top: 50px;
+}
+
+.image_calanque {
+  /*column_3*/
+
+  width: 290px;
+  height: 470px;
+  contain: content;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  display: flex;
+}
+.parc {
+  margin-left: 10px;
+  font-weight: 800;
+  margin-top: 15px;
+}
+.c_5 {
+  width: 288px;
+  height: 250px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+  border-radius: 20px;
+  display: inline-grid;
+
+  margin-top: 50px;
+} /*column_4*/
+.image_dame {
+  width: 288px;
+  height: 195px;
+  contain: content;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   grid-area: 2/4;
-} 
-.notre{ margin-left: 15px;
- font-weight: 800; 
- grid-area: 3/4;
 }
-.c_6{ width: 288px;
-   height: 250px;
-margin-top: -10px;
-border-radius: 20px;
-grid-area: 6/4;
-
-box-shadow:3px 3px 5px 6px #f1f1f1;
-
+.notre {
+  margin-left: 15px;
+  font-weight: 800;
+  grid-area: 3/4;
 }
-.image_longchamp{
+.c_6 {
+  width: 288px;
+  height: 250px;
+  margin-top: -10px;
+  border-radius: 20px;
+  grid-area: 6/4;
+
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+}
+.image_longchamp {
   width: 288px;
   height: 200px;
   contain: content;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 
-margin-top:- 20px;
-
+  margin-top: -20px;
 }
-.lonchamp{ margin-left:15px;
-margin-top: 10px;
-font-weight: 800;
-grid-area: 7/4;
-}
-
-footer{display: grid;
- width: 1210px;
- height: 180px;
-grid-template-columns :repeat(3, 1fr);
-margin-top: 50px;
-grid-template-rows: auto;
-background-color:#F2F2F2;
-margin-left: 10px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
-}
-h3{font: 300 black;
-font-size: color black;
+.lonchamp {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-weight: 800;
+  grid-area: 7/4;
 }
 
-
-h2{ font-weight: 800;
-
+footer {
+  display: grid;
+  width: 1210px;
+  height: 180px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  grid-template-rows: auto;
+  background-color: #f2f2f2;
+  margin-left: 10px;
+  box-shadow: 3px 3px 5px 6px #f1f1f1;
+}
+h3 {
+  font: 300 black;
+  font-size: color black;
 }
 
-
-
-
-
-a
-{
-
-text-decoration:none;
-color: black;
-
+h2 {
+  font-weight: 800;
 }
 
-@media only screen and (min-width: 200px) and (max-width:379px){
+a {
+  text-decoration: none;
+  color: black;
+}
 
-  .wapper{width:379px;
-    height: auto;
+@media only screen and (min-width: 200px) and (max-width: 379px) {
+  .wapper {
+    width: 379px;
+    height:5923px;
     margin: auto;
   }
 
-body{ width: auto;
-}
-header{
-  min-width: 300px;
- max-width: 400px;
- 
- 
-     height: 100px;
-     grid-template-columns: auto;
-   grid-template-rows: auto;
- align-self: stretch;
-   }
-
-  
-   
-   .housing { grid-area: 2/1;
-  
-   border-bottom: 2px solid #0065FC; 
-     width: 300px;
-    margin-left: 10px;
-     display: inline grid; 
-    
-   }
-   .activity{ grid-area: 2/2;
-   margin-left:-180px;
-   border-bottom: 3px solid #F2F2F2;
-
- 
-   width: 240px;
-   padding-left: 50px;
-   
-   } 
-   .register{  grid-area :1/2;
-   margin-left:-110px;
-   }
-   nav{flex-wrap: wrap;
-    margin:left 10px;
-   width: 300px;
-   height: 180px;
-  font-size: smaller;
-   
-     }
-     .housing:hover{
-    text-decoration:none;
-       
-   }
-  .activity:hover{
-         text-decoration:none;
+  body {
+    width: auto;
   }
-
-
-   form{  
-     
-   margin-left:-19rem;
-   margin-top: 140px;
-   border: 2px color #d9d9d9;
-   }
-   
-   .eau{padding-top:6px;
-   padding-bottom: -1px;
- 
-   }
-   #plan{display: none;
-   }
-   
-   .loupe{display: inline;
-     border: 1px black solid;
-   width: 20px;
-   padding-top: 6px;
-   padding-bottom: 1px;
-   border-radius: 5px;
-   margin-left: -5px;
-   background-color:#0065FC; 
-   padding-left: 3px;
-   padding-right: 2px;
-   }
-   .headernav{ 
-   width: 300px;
-   height:280px;
-display:grid;
-  margin-left: 10px;
-grid-template-columns: 150px 150px;
-grid-template-rows: 50px 50px 60px 60px 60px; 
-   }
-      
-   .filters {margin-top: 10px;
-  grid-area: 1/1;
-   }
-   .eco
-    { grid-area: 2/1;
-  margin-left: 60px;
-   
-     margin-top:10px;
-  
-   }
- 
-   .silver{grid-area: 2/1;
-     margin-top: 10px;
-    margin-left: 60px;
-   }
-   
-   .everybody{grid-area: 3/1;
-   margin-left: 60px;
-   margin-top: 20px;
-   }
-   
-   .family{ grid-area: 3/1;
-   margin-left: 60px;
-   }
-   
-   .romantic{grid-area: 4/1;
-    margin-left: 60px;
-   margin-top: 20px;
-   }
-   .heart{ margin-left:60px;
-   grid-area: 4/1;
-
-
-   }
-   .animals{margin-left: 5px;
-   grid-area: 5/1;
-   margin-top: 20px;
-  
-   }
-
-   .dog{ grid-area: 5/1;
-    margin-left: 5px;
- 
-       
-   padding-left: 10px;
-   padding-right: -15px;
-   width: 30px;
- 
- }
-   .i_f_o{display: flex;
-     width: 300px;
-     margin-top: 30px;
-     flex-wrap: wrap;
- 
-   }
- .aside{margin-top:20px;
-  
- 
- }
- .info{margin-left:40px;
- margin-top: -40px;
- }
- 
- 
- 
-   .populaire{margin-left:-10px;
- margin-top: -64rem;
- width: 320px;
-grid-column: auto;
-padding-left: 10px;
-padding-right: 10px;
-   }
-   .lesplus{font-size: large;
-   }
-   .anchor{margin-left: 60px;
-
-   }
-   .star_eau,.star_bleu{ margin-top:30px;
-
-   }
- 
-    
-     .sectiondumatin,.section_eau,.section_bleu{width: 300px;
-                /*image hotel*/
-     }
-
-     
-     section{ margin-top:54rem;
-     width: 320px;
-     padding-left: 10px;
-     padding-right: 10px;
-     height: 1900px;
-     grid-template-rows: 50px 150px 90px 40px 30px 150px  90px 30px 40px 280px 
-      30px 280px  30px 280px 30px 280px 30px 30px; 
-       grid-template-columns: 360px;      
-            padding-bottom: 40px;
-     background-color: #fff;
-           }
-     .hebergement{
-     grid-area: 1/1;
-      
-     }
-     
-     
- .sectioncannebiere{
-   display: flex;
-   width: 300px;
-   contain: size;
- 
-  }
-  .auberge{  width:300px;
-    height: 150px;       
-  display: flex;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  contain:content;
-  }
-  .sectionport{
-    grid-area: 6/1;
-  width: 300px;  
-  }
-  .hotelport{display: flex;
-    width: 300px;
-  height: 150px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;   
-  }
-  
-  
-  .sectionmouettes{
-    grid-area: 10/1;
-  width: 300px;
- 
-  }
-  
-  .sectionlamer{
-   grid-area:12/1;
-   width: 300px;   
-  }
-  .hotelamer{ width: 300px;
-    height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  
-  }
-  
-  .sectionpanier{
-    grid-area:  14/1;
-    width: 300px;
- 
-  }
-  
-  .aubergepanier{width: 300px;
-    height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  
-  }
-  .sectionamina{
-    grid-area: 16/1;
-    width: 300px;
-  }
-  
-  .hotelamina{width: 300px;
-    height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px
-  
-  }
-  aside{
-    grid-area:18/1;
-  }
-  
-  
-  .hotelmouettes{display:flex;
- 
-  width: 300px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  contain: content;
-  }
- 
-  article { width: 320px;
-   grid-template-columns: 360px;
-   grid-template-rows: 50px 190px 40px 50px 30px
-   190px 50px 50px 190px 30px 30px 30px 190px 50px 190px 30px 30px 190px
-   30px 30px 30px 190px 30px  30px 30px 190px;
- height: 1920px;
- margin-top: 1px;
- 
- display:grid;     
- padding-top: 25px;
-padding-right: 20px;
- }
- .image_port{width: 300px;
- height: 200px;
- contain:content;
- border-top-left-radius: 20px;
- border-top-right-radius: 20px;
- margin-top: -10px;
- }
- 
- .a_m{
-  margin-top:5px;
-  margin-left: 10px;
- }
- .image_fort{ 
- grid-area: 6/1;
- width: 300px;
- height: 205px;
- contain: content;
- border-top-left-radius:20px;
- border-top-right-radius:20px;
- display: flex;
- margin-top:-33px;
- }
- 
- .v_1{margin-left: 20px;
-   grid-area: 4/1;
- margin-top: 10px;
- }
- 
- .pomegue{
-   grid-area: 8/1;
- }
- 
- .c_1{height: 280px;
-   width: 300px;
- background-color: #fff;
- grid-area: 2/1;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
-  margin-left: 20px;
-  border-radius: 20px;
- 
- }
- 
- .c_2
- { 
- margin-left:10px;
- height: 280px;
- width: 300px;box-shadow:3px 3px 5px 6px #f1f1f1;
-
- margin-top: 10px;
- 
- }
- 
- .c_3{
-   height: 280px;
-   width: 300px; 
-   box-shadow:3px 3px 5px 6px #f1f1f1;
- margin-top:25px;
- border-radius: 20px;
-
- grid-area:9/1;
- margin-left: 10px;
- }
- 
- .image_frioul{width: 300px;
- height: 200px;
- contain: content;
- border-top-left-radius:20px;
- border-top-right-radius:20px;
- grid-area: 9/1;
- margin-top: -20px;
- 
- }
- .frioul{grid-area: 12/1;
- 
- }
- 
- .c_4{ 
-   height: 280px;
-   width: 300px;
-   display: grid; 
-  margin-top: 45px;
-   grid-area:13/1;
-
- margin-left: 20px;
-
- }
- .image_calanque{
- grid-area: 13/1;
-   width: 300px;
-   height: 200px;
-   contain: content;
-margin-top:-19px;
-  display: grid;
- 
- }
- .parc{
-   grid-area: 15/1;
- 
- 
- }
- .c_5{
-   height: 280px;
-   width: 300px;
- grid-area: 16/1;
- margin-left: 20px;
- 
- 
- }
- .image_dame{ width: 300px;
-   height: 200px;
- contain: content;
- grid-area: 16/1;
-margin-top:-20px;
- 
- }
- .notre{grid-area: 19/1;
- 
- 
- }
- .c_6{
-   height: 280px;
-  width: 300px;
- 
-  grid-area: 19/1;
-  margin-top: -12px;
-  margin-left: 20px;
- }
- 
- .image_longchamp{width: 300px;
-   height: 200px;
- contain: content;
- grid-area: 19/1;
- 
- }
- .lonchamp{
-   grid-area: 23/1;
- margin-top:30px;
- }
- .column_2{
-   margin-left: 10px;
-   grid-area: 6/1;
- }
- .column_3{grid-area: 13/1;
- 
- }
- .column_4{grid-area: 15/1;
- margin-top: 65px;
- }
- 
- footer{margin-top:30px;
-  grid-template-columns:300px;
-  grid-template-rows: 200px 150px 150px;
-  width: 330px;
-  height: 500px; 
- 
-
- 
- margin-left: 10px;
- }
- .p_1, .p_2,.h_2,.h_3,.a_3,.a_4 {margin-left: 10px;
- 
- }
-
-
-}
-
-
-
-
-
-   
-@media only screen and (min-width: 380px) and (max-width: 480px){
- .wapper{ width: 480px;
-  height: auto;
-  margin: auto;
-
- }
-
-
-
-
-
-  body{ width:100%;
-    overflow: auto;
-   
- }
- 
- 
- 
-  header{
- min-width: 300px;
-max-width: 400px;
-
+  header {
+    min-width: 300px;
+    max-width: 400px;
 
     height: 100px;
     grid-template-columns: auto;
-  grid-template-rows: auto;
-align-self: stretch;
+    grid-template-rows: auto;
+    align-self: stretch;
   }
-  
-  .housing{ grid-area: 2/1;
-  margin-left: -20px;
-  
-  border-bottom: 2px solid #0065FC; 
-  text-decoration: none;
-  width: 220px;
-  padding-left: 30px;
-  
-  }
-  .activity{ grid-area: 2/2;
-  margin-left: -20px;
-  
-  border-bottom: 2px solid #F2F2F2;
-  text-decoration: none;
-  width: 240px;
-  padding-left: 50px;
-  
-  } 
-  .register{  grid-area :1/2;
-  margin-left:70px;
-  }
-  
-  nav{flex-wrap: wrap;
-  width: 400px;
-  height: 180px;
-    }
-  
-  form{  
-    
-  margin-left:-25rem;
-  margin-top: 140px;
-  border: 2px color #d9d9d9;
-  }
-  
-  .eau{padding-top:6px;
-  padding-bottom: -1px;
 
-  }
-  #plan{display: none;
-  }
-  
-  .loupe{display: inline;
-    border: 1px black solid;
-  width: 20px;
-  padding-top: 6px;
-  padding-bottom: 1px;
-  border-radius: 5px;
-  margin-left: -5px;
-  background-color:#0065FC; 
-  padding-left: 3px;
-  padding-right: 2px;
-  }
-  .headernav{
-  width: 340px;
-   height:280px;
-display:grid;
-  margin-left: 10px;
-grid-template-columns: 170px 170px;
-grid-template-rows: 70px 50px 50px 70px 50px;
+  .housing {
+    grid-area: 2/1;
 
-  }
-  .filters {margin-top: 20px;
-    grid-area: 1/1;
-     }
-     .eco
-      { grid-area: 2/1;
+    border-bottom: 2px solid #0065fc;
+    width: 300px;
     margin-left: 10px;
-     
-       margin-top:40px;
-    
-     }
-   
-     .silver{grid-area: 2/1;
-       margin-top: 30px;
-      margin-left: 10px;
-     }
-     
-     .everybody{grid-area: 2/2;
-     margin-left: 30px;
-     margin-top: 20px;
-     }
-     
-     .family{ grid-area: 2/2;
-  margin-left: 30px;
-     }
-     
-     .romantic{grid-area: 4/1;
-    margin-left: 10px; 
+    display: inline grid;
+  }
+  .activity {
+    grid-area: 2/2;
+    margin-left: -180px;
+    border-bottom: 3px solid #f2f2f2;
+
+    width: 240px;
+    padding-left: 50px;
+  }
+  .register {
+    grid-area: 1/2;
+    margin-left: -110px;
+  }
+  nav {
+    flex-wrap: wrap;
+    margin: left 10px;
+    width: 300px;
+    height: 180px;
+    font-size: smaller;
+  }
+  .housing:hover {
+    text-decoration: none;
+  }
+  .activity:hover {
+    text-decoration: none;
+  }
+
+  form {
+    margin-left: -19rem;
+    margin-top: 140px;
+    border: 2px color #d9d9d9;
+  }
+
+  .eau {
+    padding-top: 6px;
+    padding-bottom: -1px;
+  }
+  #plan {
+    display: none;
+  }
+
+  .loupe {
+    display: inline;
+    border: 1px black solid;
+    width: 20px;
+    padding-top: 6px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    margin-left: -5px;
+    background-color: #0065fc;
+    padding-left: 3px;
+    padding-right: 2px;
+  }
+  .headernav {
+    width: 300px;
+    height: 280px;
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 50px 50px 60px 60px 60px;
+  }
+
+  .filters {
+    margin-top: 10px;
+    grid-area: 1/1;
+  }
+  .eco {
+    grid-area: 2/1;
+    margin-left: 60px;
+
+    margin-top: 10px;
+  }
+
+  .silver {
+    grid-area: 2/1;
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+
+  .everybody {
+    grid-area: 3/1;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+
+  .family {
+    grid-area: 3/1;
+    margin-left: 60px;
+  }
+
+  .romantic {
+    grid-area: 4/1;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  .heart {
+    margin-left: 60px;
+    grid-area: 4/1;
+  }
+  .animals {
+    margin-left: 5px;
+    grid-area: 5/1;
+    margin-top: 20px;
+  }
+
+  .dog {
+    grid-area: 5/1;
+    margin-left: 5px;
+
+    padding-left: 10px;
+    padding-right: -15px;
+    width: 30px;
+  }
+  .i_f_o {
+    display: flex;
+    width: 300px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  .aside {
+    margin-top: 20px;
+  }
+  .info {
+    margin-left: 40px;
+    margin-top: -40px;
+  }
+
+  .populaire {
+    margin-left: -10px;
+    margin-top: -64rem;
+    width: 320px;
+    grid-column: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .lesplus {
+    font-size: large;
+  }
+  .anchor {
+    margin-left: 60px;
+  }
+  .star_eau,
+  .star_bleu {
+    margin-top: 30px;
+  }
+
+  .sectiondumatin,
+  .section_eau,
+  .section_bleu {
+    width: 300px;
+    /*image hotel*/
+  }
+
+  section {
+    margin-top: 54rem;
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 1900px;
+    grid-template-rows:
+      50px 150px 90px 40px 30px 150px 90px 30px 40px 280px
+      30px 280px 30px 280px 30px 280px 30px 30px;
+    grid-template-columns: 360px;
+    padding-bottom: 40px;
+    background-color: #fff;
+  }
+  .hebergement {
+    grid-area: 1/1;
+  }
+
+  .sectioncannebiere {
+    display: flex;
+    width: 300px;
+    contain: size;
+  }
+  .auberge {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    contain: content;
+  }
+  .sectionport {
+    grid-area: 6/1;
+    width: 300px;
+  }
+  .hotelport {
+    display: flex;
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .sectionmouettes {
+    grid-area: 10/1;
+    width: 300px;
+  }
+
+  .sectionlamer {
+    grid-area: 12/1;
+    width: 300px;
+  }
+  .hotelamer {
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .sectionpanier {
+    grid-area: 14/1;
+    width: 300px;
+  }
+
+  .aubergepanier {
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .sectionamina {
+    grid-area: 16/1;
+    width: 300px;
+  }
+
+  .hotelamina {
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  aside {
+    grid-area: 18/1;
+  }
+
+  .hotelmouettes {
+    display: flex;
+
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    contain: content;
+  }
+
+  article {
+    width: 320px;
+    grid-template-columns: 360px;
+    grid-template-rows:
+      50px 190px 40px 50px 30px
+      190px 50px 50px 190px 30px 30px 30px 190px 50px 190px 30px 30px 190px
+      30px 30px 30px 190px 30px 30px 30px 190px;
+    height: 1920px;
+    margin-top: 1px;
+
+    display: grid;
+    padding-top: 25px;
+    padding-right: 20px;
+  }
+  .image_port {
+    width: 300px;
+    height: 200px;
+    contain: content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -10px;
+  }
+
+  .a_m {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .image_fort {
+    grid-area: 6/1;
+    width: 300px;
+    height: 205px;
+    contain: content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    margin-top: -33px;
+  }
+
+  .v_1 {
+    margin-left: 20px;
+    grid-area: 4/1;
+    margin-top: 10px;
+  }
+
+  .pomegue {
+    grid-area: 8/1;
+  }
+
+  .c_1 {
+    height: 280px;
+    width: 300px;
+    background-color: #fff;
+    grid-area: 2/1;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    margin-left: 20px;
+    border-radius: 20px;
+  }
+
+  .c_2 {
+    margin-left: 10px;
+    height: 280px;
+    width: 300px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+
+    margin-top: 10px;
+  }
+
+  .c_3 {
+    height: 280px;
+    width: 300px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    margin-top: 25px;
+    border-radius: 20px;
+
+    grid-area: 9/1;
+    margin-left: 10px;
+  }
+
+  .image_frioul {
+    width: 300px;
+    height: 200px;
+    contain: content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    grid-area: 9/1;
+    margin-top: -20px;
+  }
+  .frioul {
+    grid-area: 12/1;
+  }
+
+  .c_4 {
+    height: 280px;
+    width: 300px;
+    display: grid;
+    margin-top: 45px;
+    grid-area: 13/1;
+
+    margin-left: 20px;
+  }
+  .image_calanque {
+    grid-area: 13/1;
+    width: 300px;
+    height: 200px;
+    contain: content;
+    margin-top: -19px;
+    display: grid;
+  }
+  .parc {
+    grid-area: 15/1;
+  }
+  .c_5 {
+    height: 280px;
+    width: 300px;
+    grid-area: 16/1;
+    margin-left: 20px;
+  }
+  .image_dame {
+    width: 300px;
+    height: 200px;
+    contain: content;
+    grid-area: 16/1;
+    margin-top: -20px;
+  }
+  .notre {
+    grid-area: 19/1;
+  }
+  .c_6 {
+    height: 280px;
+    width: 300px;
+
+    grid-area: 19/1;
+    margin-top: -12px;
+    margin-left: 20px;
+  }
+
+  .image_longchamp {
+    width: 300px;
+    height: 200px;
+    contain: content;
+    grid-area: 19/1;
+  }
+  .lonchamp {
+    grid-area: 23/1;
+    margin-top: 30px;
+  }
+  .column_2 {
+    margin-left: 10px;
+    grid-area: 6/1;
+  }
+  .column_3 {
+    grid-area: 13/1;
+  }
+  .column_4 {
+    grid-area: 15/1;
+    margin-top: 65px;
+  }
+
+  footer {
+    margin-top: 30px;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 150px 150px;
+    width: 330px;
+    height: 500px;
+
+    margin-left: 10px;
+  }
+  .p_1,
+  .p_2,
+  .h_2,
+  .h_3,
+  .a_3,
+  .a_4 {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+  .wapper {
+    width: 480px;
+    height:5933px;
+    margin: auto;
+  }
+
+  body {
+    width: 100%;
+    overflow: auto;
+  }
+
+  header {
+    min-width: 300px;
+    max-width: 400px;
+
+    height: 100px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-self: stretch;
+  }
+
+  .housing {
+    grid-area: 2/1;
+    margin-left: -20px;
+
+    border-bottom: 2px solid #0065fc;
+    text-decoration: none;
+    width: 220px;
+    padding-left: 30px;
+  }
+  .activity {
+    grid-area: 2/2;
+    margin-left: -20px;
+
+    border-bottom: 2px solid #f2f2f2;
+    text-decoration: none;
+    width: 240px;
+    padding-left: 50px;
+  }
+  .register {
+    grid-area: 1/2;
+    margin-left: 70px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    width: 400px;
+    height: 180px;
+  }
+
+  form {
+    margin-left: -25rem;
+    margin-top: 140px;
+    border: 2px color #d9d9d9;
+  }
+
+  .eau {
+    padding-top: 6px;
+    padding-bottom: -1px;
+  }
+  #plan {
+    display: none;
+  }
+
+  .loupe {
+    display: inline;
+    border: 1px black solid;
+    width: 20px;
+    padding-top: 6px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    margin-left: -5px;
+    background-color: #0065fc;
+    padding-left: 3px;
+    padding-right: 2px;
+  }
+  .headernav {
+    width: 340px;
+    height: 280px;
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 70px 50px 50px 70px 50px;
+  }
+  .filters {
+    margin-top: 20px;
+    grid-area: 1/1;
+  }
+  .eco {
+    grid-area: 2/1;
+    margin-left: 10px;
+
+    margin-top: 40px;
+  }
+
+  .silver {
+    grid-area: 2/1;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .everybody {
+    grid-area: 2/2;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .family {
+    grid-area: 2/2;
+    margin-left: 30px;
+  }
+
+  .romantic {
+    grid-area: 4/1;
+    margin-left: 10px;
     margin-top: -30px;
-     }
-     .heart{ 
-     grid-area: 4/1;
-      margin-left: 10px;
-  
-     }
-     .animals{margin-left: 5px;
-     grid-area: 5/1;
-     margin-top:-10px;
-    
-     }
-  
-     .dog{ grid-area: 5/1;
-      margin-left: 5px;
-   
-         
-     padding-left: 10px;
-     padding-right: -15px;
-     width: 30px; 
-     }
-  
-  .i_f_o{display: flex;
+  }
+  .heart {
+    grid-area: 4/1;
+    margin-left: 10px;
+  }
+  .animals {
+    margin-left: 5px;
+    grid-area: 5/1;
+    margin-top: -10px;
+  }
+
+  .dog {
+    grid-area: 5/1;
+    margin-left: 5px;
+
+    padding-left: 10px;
+    padding-right: -15px;
+    width: 30px;
+  }
+
+  .i_f_o {
+    display: flex;
     width: 340px;
     margin-top: 30px;
     flex-wrap: wrap;
-
   }
-.aside{margin-top:20px;
- 
+  .aside {
+    margin-top: 20px;
+  }
+  .info {
+    margin-left: 40px;
+    margin-top: -40px;
+  }
 
-}
-.info{margin-left:40px;
-margin-top: -40px;
-}
+  .populaire {
+    margin-left: -13px;
+    margin-top: -64rem;
+  }
 
-
-
-  .populaire{margin-left:-13px;
-margin-top: -64rem;
-    }
-    
-    section{ margin-top:54rem;
+  section {
+    margin-top: 54rem;
     width: 360px;
     height: 1900px;
-    grid-template-rows: 50px 150px 90px 40px 30px 150px  90px 30px 40px 280px 
-     30px 280px  30px 280px 30px 280px 30px 30px; 
-      grid-template-columns: 360px;      
-           padding-bottom: 40px;
+    grid-template-rows:
+      50px 150px 90px 40px 30px 150px 90px 30px 40px 280px
+      30px 280px 30px 280px 30px 280px 30px 30px;
+    grid-template-columns: 360px;
+    padding-bottom: 40px;
     background-color: #fff;
-          }
-    .hebergement{
+  }
+  .hebergement {
     grid-area: 1/1;
-     
-    }
-    
-    
-.sectioncannebiere{
-  display: flex;
-  width: 350px;
-  contain: size;
- }
- .auberge{  width:350px;
-   height: 150px;       
- display: flex;
- border-top-left-radius: 20px;
- border-top-right-radius: 20px;
- contain:content;
- }
- .sectionport{
-   grid-area: 6/1;
- width: 350px;  
- }
- .hotelport{display: flex;
-   width: 350px;
- height: 150px;
- border-top-left-radius: 20px;
- border-top-right-radius: 20px;   
- }
- 
- 
- .sectionmouettes{
-   grid-area: 10/1;
- width: 350px;
-
- }
- 
- .sectionlamer{
-  grid-area:12/1;
-  width: 350px;   
- }
- .hotelamer{ width: 350px;
-   height: 150px;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
- 
- }
- 
- .sectionpanier{
-   grid-area:  14/1;
-   width: 350px;
-
- }
- 
- .aubergepanier{width: 350px;
-   height: 150px;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
- 
- }
- .sectionamina{
-   grid-area: 16/1;
-   width: 350px;
- }
- 
- .hotelamina{width: 350px;
-   height: 150px;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px
- 
- }
- aside{
-   grid-area:18/1;
- }
- 
- 
- .hotelmouettes{display:flex;
-
- width: 350px;
- border-top-left-radius: 20px;
- border-top-right-radius: 20px;
- contain: content;
- }
-
- article { width: 400px;
-  grid-template-columns: 360px;
-  grid-template-rows: 50px 190px 40px 50px 30px
-  190px 50px 50px 190px 30px 30px 30px 190px 50px 190px 30px 30px 190px
-  30px 30px 30px 190px 30px  30px 30px 190px;
-height: 1920px;
-margin-top: 1px;
-
-display:grid;     
-padding-top: 25px;
-
-}
-.image_port{width: 350px;
-height: 200px;
-contain:content;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-margin-top: -10px;
-}
-
-.a_m{
- margin-top:5px;
- margin-left: 10px;
-}
-.image_fort{ 
-grid-area: 6/1;
-width: 350px;
-height: 205px;
-contain: content;
-border-top-left-radius:20px;
-border-top-right-radius:20px;
-display: flex;
-margin-top:-33px;
-}
-
-.v_1{margin-left: 20px;
-  grid-area: 4/1;
-margin-top: 10px;
-}
-
-.pomegue{
-  grid-area: 8/1;
-}
-
-.c_1{height: 280px;
-  width: 350px;
-background-color: #fff;
-grid-area: 2/1;
- box-shadow:3px 3px 5px 6px #f1f1f1;
- margin-left: 20px;
- border-radius: 20px;
-
-}
-
-.c_2
-{ 
-margin-left:10px;
-height: 280px;
-width: 350px;box-shadow:3px 3px 5px 6px #f1f1f1;
-margin-top: -5px;
-
-
-}
-
-.c_3{
-  height: 280px;
-  width: 350px; 
-  box-shadow:3px 3px 5px 6px #f1f1f1;
-margin-top: 30px;
-border-radius: 20px;
-
-grid-area:9/1;
-margin-left: 10px;
-}
-
-.image_frioul{width: 350px;
-height: 200px;
-contain: content;
-border-top-left-radius:20px;
-border-top-right-radius:20px;
-grid-area: 9/1;
-margin-top: -3rem;
-
-}
-.frioul{grid-area: 12/1;
-
-}
-
-.c_4{ 
-  height: 280px;
-  width: 350px;
-  display: grid; 
- margin-top: 45px;
-  grid-area:13/1;
-
-margin-left: 20px;
-}
-.image_calanque{
-grid-area: 13/1;
-  width: 350px;
-  height: 200px;
-  contain: content;
-margin-top: -97px;
- display: grid;
-
-}
-.parc{
-  grid-area: 15/1;
-
-
-}
-.c_5{
-  height: 280px;
-  width: 350px;
-grid-area: 16/1;
-margin-left: 20px;
-
-
-}
-.image_dame{ width: 350px;
-  height: 200px;
-contain: content;
-grid-area: 16/1;
-margin-top: -4.8rem;
-
-}
-.notre{grid-area: 19/1;
-
-
-}
-.c_6{
-  height: 280px;
- width: 350px;
-
- grid-area: 19/1;
- margin-top: -12px;
- margin-left: 20px;
-}
-
-.image_longchamp{width: 350px;
-  height: 200px;
-contain: content;
-grid-area: 19/1;
-
-}
-.lonchamp{
-  grid-area: 23/1;
-margin-top:30px;
-}
-.column_2{
-  margin-left: 10px;
-  grid-area: 6/1;
-}
-.column_3{grid-area: 13/1;
-
-}
-.column_4{grid-area: 15/1;
-margin-top: 65px;
-}
-
-
-
-footer{margin-top:30px;
-grid-template-columns:400px;
-grid-template-rows: 200px 150px 150px;
-width: 400px;
-height: 500px;
-
-margin-left: 10px;
-}
-.p_1, .p_2,.h_2,.h_3,.a_3,.a_4 {margin-left: 10px;
-
-}
-
-}
-  
-@media only screen and (min-width: 481px) and (max-width: 720px){
- .wapper{ width: 720px;
-  margin: auto;
-  height: auto;
-
- } 
-
-body{ width:100%;
- background-size: auto;
-overflow: auto;
-}
- 
-header{ width: auto;
-
-background-size: auto;
-}
-  
- .housing{ grid-area: 2/2;
-  margin-left: -20px;
-
-} 
-
-.activity{ grid-area: 2/3;
-  margin-left: -10px;
-
-}
-.register{  grid-area :1/4;
-  margin-left: -40px;
- 
   }
 
-  .headernav{ 
+  .sectioncannebiere {
+    display: flex;
+    width: 350px;
+    contain: size;
+  }
+  .auberge {
+    width: 350px;
+    height: 150px;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    contain: content;
+  }
+  .sectionport {
+    grid-area: 6/1;
+    width: 350px;
+  }
+  .hotelport {
+    display: flex;
+    width: 350px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .sectionmouettes {
+    grid-area: 10/1;
+    width: 350px;
+  }
+
+  .sectionlamer {
+    grid-area: 12/1;
+    width: 350px;
+  }
+  .hotelamer {
+    width: 350px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .sectionpanier {
+    grid-area: 14/1;
+    width: 350px;
+  }
+
+  .aubergepanier {
+    width: 350px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .sectionamina {
+    grid-area: 16/1;
+    width: 350px;
+  }
+
+  .hotelamina {
+    width: 350px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  aside {
+    grid-area: 18/1;
+  }
+
+  .hotelmouettes {
+    display: flex;
+
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    contain: content;
+  }
+
+  article {
+    width: 400px;
+    grid-template-columns: 360px;
+    grid-template-rows:
+      50px 190px 40px 50px 30px
+      190px 50px 50px 190px 30px 30px 30px 190px 50px 190px 30px 30px 190px
+      30px 30px 30px 190px 30px 30px 30px 190px;
+    height: 1920px;
+    margin-top: 1px;
+
+    display: grid;
+    padding-top: 25px;
+  }
+  .image_port {
+    width: 350px;
+    height: 200px;
+    contain: content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -10px;
+  }
+
+  .a_m {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .image_fort {
+    grid-area: 6/1;
+    width: 350px;
+    height: 205px;
+    contain: content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    margin-top: -33px;
+  }
+
+  .v_1 {
+    margin-left: 20px;
+    grid-area: 4/1;
+    margin-top: 10px;
+  }
+
+  .pomegue {
+    grid-area: 8/1;
+  }
+
+  .c_1 {
+    height: 280px;
+    width: 350px;
+    background-color: #fff;
+    grid-area: 2/1;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    margin-left: 20px;
+    border-radius: 20px;
+  }
+
+  .c_2 {
+    margin-left: 10px;
+    height: 280px;
+    width: 350px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    margin-top: -5px;
+  }
+
+  .c_3 {
+    height: 280px;
+    width: 350px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    margin-top: 30px;
+    border-radius: 20px;
+
+    grid-area: 9/1;
+    margin-left: 10px;
+  }
+
+  .image_frioul {
+    width: 350px;
+    height: 200px;
+    contain: content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    grid-area: 9/1;
+    margin-top: -3rem;
+  }
+  .frioul {
+    grid-area: 12/1;
+  }
+
+  .c_4 {
+    height: 280px;
+    width: 350px;
+    display: grid;
+    margin-top: 45px;
+    grid-area: 13/1;
+
+    margin-left: 20px;
+  }
+  .image_calanque {
+    grid-area: 13/1;
+    width: 350px;
+    height: 200px;
+    contain: content;
+    margin-top: -97px;
+    display: grid;
+  }
+  .parc {
+    grid-area: 15/1;
+  }
+  .c_5 {
+    height: 280px;
+    width: 350px;
+    grid-area: 16/1;
+    margin-left: 20px;
+  }
+  .image_dame {
+    width: 350px;
+    height: 200px;
+    contain: content;
+    grid-area: 16/1;
+    margin-top: -4.8rem;
+  }
+  .notre {
+    grid-area: 19/1;
+  }
+  .c_6 {
+    height: 280px;
+    width: 350px;
+
+    grid-area: 19/1;
+    margin-top: -12px;
+    margin-left: 20px;
+  }
+
+  .image_longchamp {
+    width: 350px;
+    height: 200px;
+    contain: content;
+    grid-area: 19/1;
+  }
+  .lonchamp {
+    grid-area: 23/1;
+    margin-top: 30px;
+  }
+  .column_2 {
+    margin-left: 10px;
+    grid-area: 6/1;
+  }
+  .column_3 {
+    grid-area: 13/1;
+  }
+  .column_4 {
+    grid-area: 15/1;
+    margin-top: 65px;
+  }
+
+  footer {
+    margin-top: 30px;
+    grid-template-columns: 400px;
+    grid-template-rows: 200px 150px 150px;
+    width: 400px;
+    height: 500px;
+
+    margin-left: 10px;
+  }
+  .p_1,
+  .p_2,
+  .h_2,
+  .h_3,
+  .a_3,
+  .a_4 {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+  .wapper {
+    width: 720px;
+    margin: auto;
+    height: 3887px;
+  }
+
+  body {
+    width: 100%;
+    background-size: auto;
+    overflow: auto;
+  }
+
+  header {
+    width: auto;
+
+    background-size: auto;
+  }
+
+  .housing {
+    grid-area: 2/2;
+    margin-left: -20px;
+  }
+
+  .activity {
+    grid-area: 2/3;
+    margin-left: -10px;
+  }
+  .register {
+    grid-area: 1/4;
+    margin-left: -40px;
+  }
+
+  .headernav {
     width: 600px;
-    height:250px;
- flex-wrap: wrap;
-
+    height: 250px;
+    flex-wrap: wrap;
   }
 
-
-.i_f_o{
-margin-top: -20px;
-}
-
-
-
-
-.populaire{ display:inline-grid;
-margin-left: -21.5rem;
-margin-top:-51rem; 
-width: 620px;
-}
-
-.eau_2,.matin,.bleu{ width: 250px;
-contain: content;
-
-}
-.hotel_eau,.nuit_eau,.star_eau{margin-left: 320px;
-
-}
-
- .hotel_bleu,.star_bleu,.nuit_bleu{margin-left: 320px;
-
-
- }
- .soleil,.nuitsoleil,.starmatin{margin-left: 320px;
- }
-.lesplus{ width: 350px;
-  height: 50px; 
-  font-weight: 800; 
- margin-top: 8px;
-}
-.anchor{ display:flex;
-  width: 30px;
-  height: 30px;
-  grid-area: 1/2;
-margin-left:27em; 
-background-color:#F2F2F2 ;    
-
-}
-section{ margin-top: 51rem;
-  height:1030px;
-  width: 620px;
-  grid-template-columns: 295px  295px;
-}
-.sectiondumatin{width: 610px;
-
-}
-
-.section_eau{width: 610px;
-}
-
-.section_bleu{width: 610px;
-}
-
-.sectionmouettes{ grid-area: 9/1;
-  margin-top: 3rem;
-width: 290px;
-contain: content;
-}
-.hotelmouettes{
-  width: 290px; 
-}
-
-.sectionamina{ grid-area: 9/2;
-margin-top: 3rem;
-width: 290px;
-
-}
-.hotelamina{
-width: 290px;
-}
-.sectioncannebiere,.auberge{
-  width: 290px;
-} 
-.sectionport,.hotelport{ width: 290px;
-
-}
-
-.sectionlamer,.hotelamer{ width: 290px;
-  
-}
-.sectionpanier,.aubergepanier{ width: 290px;
-
-}
-aside{grid-area:50/1;
-
-
-}
-article{height: 1180px;
-  width: 665px;
-  grid-template-columns: 320px 335px;
-margin-top: 30px;
-box-shadow:3px 3px 5px 6px #f1f1f1;  
-
-}
-
-
-.a_m{margin-left: 10px;
-
-}
-
-.c_1{ 
-  width: 320px;
- grid-area: 2/1; 
- box-shadow:3px 3px 5px 6px #f1f1f1;  
-}
-.image_port{ width: 320px;
-  border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-}
-.column_3{grid-area:  8/1;
-
-}
-.column_4{grid-area: 8/2;
-
-}
-.c_4{
-  grid-area: 8/1;
-  width:320px;
-  height: 530px;
-  margin-top:30px ;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
-  background-color: #fff;
-
-}
-.image_calanque{
-  height: 480px;
-
-  width: 320px;
-border-top-left-radius: 20px;
-}
-.parc{grid-area: 9/1;
-
-}
-
-.c_2{
-  margin-top: 100px;
-grid-area: 1/2;
-margin-top: 50px;
-height: 245px;
-width: 320px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
-
-}
-.image_fort{width: 320px;
-height: 190 px;
-contain: content;
-display: flex;
-}
-
-.c_3{
-height: 245px;
-margin-top:30px;
-width: 320px;
-box-shadow:3px 3px 5px 6px #f1f1f1;
-}
-.image_frioul{ width: 320px;
-  height: 200px;
-  margin-top: -5px;
-  contain: content;
-
-}
-.c_5{ 
-
-display: iline-grid;
-width: 320px;
-margin-top:30px;
-
-}
-
-.image_dame{
-  width: 320px;
-
-}
-
-
-.c_6{
-
-  width: 320px;
-  grid-area: 9/2;
-
-margin-top:-17.2rem;
-}
-.image_longchamp{ grid-area: 9/2;
-
-  width: 320px; 
-
-}
-.lonchamp{grid-area: 9/2;
-
-
-}
-
-footer{width: 670px;
-height: 230px;
-flex-wrap: wrap;
-}
-.p_1,.p_2{margin-left: 10px;
-
-}
-.h_2,.h_3{ margin-left: 30px;
-
-}
-.a_3,.a_4{margin-left: 50px;
-
-}
-
-}
-
-@media only screen and (min-width: 721px) and (max-width:870px){
-
-
-.wapper{width: 870px;
-  height: auto;
-  margin: auto;
-
-}
-
-
-body{width:100%;
-
-}
-
-header{ width: 850px;
-  flex-wrap: wrap;
-}
-
-  .housing{ grid-area: 2/2;
-  margin-left: 50px;
-  
-  } 
-  
-  .activity{ grid-area: 2/3;
-
-  
-  }
-  .register{  grid-area :1/4;
-  
-  }  
- 
-  .headernav{ 
-    width: 600px;
-    height:250px;
- flex-wrap: wrap;
-
-  }
-  .i_f_o{
+  .i_f_o {
     margin-top: -20px;
-  
   }
 
-.populaire{ display:inline-grid;
-  margin-left: -25.5rem;
-  margin-top:-52rem; 
-  width:770px;
-
+  .populaire {
+    display: inline-grid;
+    margin-left: -21.5rem;
+    margin-top: -51rem;
+    width: 620px;
   }
 
- .eau_2,.matin,.bleu{
-  width: 270px;
-  contain: content;
- }
- 
-.hotel_eau,.nuit_eau,.star_eau{margin-left: 320px;
-
-}
-
- .hotel_bleu,.star_bleu,.nuit_bleu{margin-left: 320px;
-
-
- }
- .soleil,.nuitsoleil,.starmatin{margin-left: 320px;
-
-
- }
-
-  .lesplus{ width: 350px;
-    height: 50px; 
-    font-weight: 800; 
-   margin-top: 8px;
+  .eau_2,
+  .matin,
+  .bleu {
+    width: 250px;
+    contain: content;
   }
-  .anchor{ display:flex;
+  .hotel_eau,
+  .nuit_eau,
+  .star_eau {
+    margin-left: 320px;
+  }
+
+  .hotel_bleu,
+  .star_bleu,
+  .nuit_bleu {
+    margin-left: 320px;
+  }
+  .soleil,
+  .nuitsoleil,
+  .starmatin {
+    margin-left: 320px;
+  }
+  .lesplus {
+    width: 350px;
+    height: 50px;
+    font-weight: 800;
+    margin-top: 8px;
+  }
+  .anchor {
+    display: flex;
     width: 30px;
     height: 30px;
     grid-area: 1/2;
-  margin-left:35rem; 
-  background-color:#F2F2F2 ;    
-  
+    margin-left: 27em;
+    background-color: #f2f2f2;
   }
-  section{ margin-top: 52rem;
-    height:1030px;
-    width: 770px;
-    grid-template-columns: 360px  360px;
-    column-gap: 2rem;
+  section {
+    margin-top: 51rem;
+    height: 1030px;
+    width: 620px;
+    grid-template-columns: 295px 295px;
   }
-  .sectiondumatin{width: 760px;
-  
+  .sectiondumatin {
+    width: 610px;
   }
-  
-  .section_eau{width: 760px;
+
+  .section_eau {
+    width: 610px;
   }
-  
-  .section_bleu{width: 760px;
+
+  .section_bleu {
+    width: 610px;
   }
-  
-  .sectionmouettes{ grid-area: 9/1;
+
+  .sectionmouettes {
+    grid-area: 9/1;
     margin-top: 3rem;
-  width: 350px;
-  contain: content;
+    width: 290px;
+    contain: content;
   }
-  .hotelmouettes{
-    width: 350px; 
+  .hotelmouettes {
+    width: 290px;
   }
-  
-  .sectionamina{ grid-area: 9/2;
-  margin-top: 3rem;
-  width: 350px;
-  
-  }
-  .hotelamina{
-  width: 350px;
-  }
-  .sectioncannebiere,.auberge{
-    width: 350px;
-  } 
-  .sectionport,.hotelport{ width: 350px;
-  
-  }
-  
-  .sectionlamer,.hotelamer{ width: 350px;
-    
-  }
-  .sectionpanier,.aubergepanier{ width: 350px;
-  }
-aside{grid-area: 50/1;
 
-}
-  
- 
- 
-  article{height: 1180px;
-    width: 815px;
-    grid-template-columns: 380px 380px;
-  margin-top: 30px;
+  .sectionamina {
+    grid-area: 9/2;
+    margin-top: 3rem;
+    width: 290px;
+  }
+  .hotelamina {
+    width: 290px;
+  }
+  .sectioncannebiere,
+  .auberge {
+    width: 290px;
+  }
+  .sectionport,
+  .hotelport {
+    width: 290px;
+  }
 
+  .sectionlamer,
+  .hotelamer {
+    width: 290px;
   }
-  .a_m{margin-left: 20px;
+  .sectionpanier,
+  .aubergepanier {
+    width: 290px;
+  }
+  aside {
+    grid-area: 50/1;
+  }
+  article {
+    height: 1180px;
+    width: 665px;
+    grid-template-columns: 320px 335px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+  }
 
+  .a_m {
+    margin-left: 10px;
   }
-  
-  .c_1{ 
-    width: 360px;
-   grid-area: 2/1; 
-   box-shadow:3px 3px 5px 6px #f1f1f1; 
-   margin-left: 20px;
-   height: 535px;
+
+  .c_1 {
+    width: 320px;
+    grid-area: 2/1;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
   }
-  .image_port{ width: 360px;
+  .image_port {
+    width: 320px;
     border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
- height: 486px;
+    border-top-right-radius: 20px;
   }
-  .column_3{grid-area:  8/1;
-  
-  }
-  .column_4{grid-area: 8/2;
-  
-  }
-  .c_4{
+  .column_3 {
     grid-area: 8/1;
-    width:360px;
+  }
+  .column_4 {
+    grid-area: 8/2;
+  }
+  .c_4 {
+    grid-area: 8/1;
+    width: 320px;
     height: 530px;
-    margin-top:30px ;
-    box-shadow:3px 3px 5px 6px #f1f1f1;
+    margin-top: 30px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
     background-color: #fff;
-   
-    margin-left: 20px;
+  }
+  .image_calanque {
+    height: 480px;
 
+    width: 320px;
+    border-top-left-radius: 20px;
   }
-  .image_calanque{
-    height: 470px;
-  
-    width: 360px;
-  border-top-left-radius: 20px;
+  .parc {
+    grid-area: 9/1;
   }
-  .parc{grid-area: 9/1;
-  
-  }
-  
-  .c_2{
+
+  .c_2 {
     margin-top: 100px;
-  grid-area: 1/2;
-  margin-top: 50px;
-  height: 270px;
-  width: 360px;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
+    grid-area: 1/2;
+    margin-top: 50px;
+    height: 245px;
+    width: 320px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+  }
+  .image_fort {
+    width: 320px;
+    height: 190 px;
+    contain: content;
+    display: flex;
+  }
 
+  .c_3 {
+    height: 245px;
+    margin-top: 30px;
+    width: 320px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
   }
-  .image_fort{width: 360px;
-  height: 200 px;
-  contain: content;
-  display: flex;
-  }
-  
-  .c_3{
-  height: 245px;
-  margin-top:20px;
-  width: 360px;
-  box-shadow:3px 3px 5px 6px #f1f1f1;
-  }
-  .image_frioul{ width: 360px;
+  .image_frioul {
+    width: 320px;
     height: 200px;
     margin-top: -5px;
     contain: content;
-  
   }
-  .c_5{ 
+  .c_5 {
+    display: iline-grid;
+    width: 320px;
+    margin-top: 30px;
+  }
 
-  display: iline-grid;
-  width: 360px;
-  margin-top:30px;
-  
+  .image_dame {
+    width: 320px;
   }
-  
-  .image_dame{
+
+  .c_6 {
+    width: 320px;
+    grid-area: 9/2;
+
+    margin-top: -17.2rem;
+  }
+  .image_longchamp {
+    grid-area: 9/2;
+
+    width: 320px;
+  }
+  .lonchamp {
+    grid-area: 9/2;
+  }
+
+  footer {
+    width: 670px;
+    height: 230px;
+    flex-wrap: wrap;
+  }
+  .p_1,
+  .p_2 {
+    margin-left: 10px;
+  }
+  .h_2,
+  .h_3 {
+    margin-left: 30px;
+  }
+  .a_3,
+  .a_4 {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 870px) {
+  .wapper {
+    width: 870px;
+    height: 3923px;
+    margin: auto;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  header {
+    width: 850px;
+    flex-wrap: wrap;
+  }
+
+  .housing {
+    grid-area: 2/2;
+    margin-left: 50px;
+  }
+
+  .activity {
+    grid-area: 2/3;
+  }
+  .register {
+    grid-area: 1/4;
+  }
+
+  .headernav {
+    width: 600px;
+    height: 250px;
+    flex-wrap: wrap;
+  }
+  .i_f_o {
+    margin-top: -20px;
+  }
+
+  .populaire {
+    display: inline-grid;
+    margin-left: -25.5rem;
+    margin-top: -52rem;
+    width: 770px;
+  }
+
+  .eau_2,
+  .matin,
+  .bleu {
+    width: 270px;
+    contain: content;
+  }
+
+  .hotel_eau,
+  .nuit_eau,
+  .star_eau {
+    margin-left: 320px;
+  }
+
+  .hotel_bleu,
+  .star_bleu,
+  .nuit_bleu {
+    margin-left: 320px;
+  }
+  .soleil,
+  .nuitsoleil,
+  .starmatin {
+    margin-left: 320px;
+  }
+
+  .lesplus {
+    width: 350px;
+    height: 50px;
+    font-weight: 800;
+    margin-top: 8px;
+  }
+  .anchor {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    grid-area: 1/2;
+    margin-left: 35rem;
+    background-color: #f2f2f2;
+  }
+  section {
+    margin-top: 52rem;
+    height: 1030px;
+    width: 770px;
+    grid-template-columns: 360px 360px;
+    column-gap: 2rem;
+  }
+  .sectiondumatin {
+    width: 760px;
+  }
+
+  .section_eau {
+    width: 760px;
+  }
+
+  .section_bleu {
+    width: 760px;
+  }
+
+  .sectionmouettes {
+    grid-area: 9/1;
+    margin-top: 3rem;
+    width: 350px;
+    contain: content;
+  }
+  .hotelmouettes {
+    width: 350px;
+  }
+
+  .sectionamina {
+    grid-area: 9/2;
+    margin-top: 3rem;
+    width: 350px;
+  }
+  .hotelamina {
+    width: 350px;
+  }
+  .sectioncannebiere,
+  .auberge {
+    width: 350px;
+  }
+  .sectionport,
+  .hotelport {
+    width: 350px;
+  }
+
+  .sectionlamer,
+  .hotelamer {
+    width: 350px;
+  }
+  .sectionpanier,
+  .aubergepanier {
+    width: 350px;
+  }
+  aside {
+    grid-area: 50/1;
+  }
+
+  article {
+    height: 1180px;
+    width: 815px;
+    grid-template-columns: 380px 380px;
+    margin-top: 30px;
+  }
+  .a_m {
+    margin-left: 20px;
+  }
+
+  .c_1 {
     width: 360px;
-  
+    grid-area: 2/1;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    margin-left: 20px;
+    height: 535px;
   }
-  
-  
-  .c_6{
-  
+  .image_port {
+    width: 360px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 486px;
+  }
+  .column_3 {
+    grid-area: 8/1;
+  }
+  .column_4 {
+    grid-area: 8/2;
+  }
+  .c_4 {
+    grid-area: 8/1;
+    width: 360px;
+    height: 530px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    background-color: #fff;
+
+    margin-left: 20px;
+  }
+  .image_calanque {
+    height: 470px;
+
+    width: 360px;
+    border-top-left-radius: 20px;
+  }
+  .parc {
+    grid-area: 9/1;
+  }
+
+  .c_2 {
+    margin-top: 100px;
+    grid-area: 1/2;
+    margin-top: 50px;
+    height: 270px;
+    width: 360px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+  }
+  .image_fort {
+    width: 360px;
+    height: 200 px;
+    contain: content;
+    display: flex;
+  }
+
+  .c_3 {
+    height: 245px;
+    margin-top: 20px;
+    width: 360px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+  }
+  .image_frioul {
+    width: 360px;
+    height: 200px;
+    margin-top: -5px;
+    contain: content;
+  }
+  .c_5 {
+    display: iline-grid;
+    width: 360px;
+    margin-top: 30px;
+  }
+
+  .image_dame {
+    width: 360px;
+  }
+
+  .c_6 {
     width: 360px;
     grid-area: 9/2;
 
-  margin-top:-17.8rem;
-  height: 260px;
+    margin-top: -17.8rem;
+    height: 260px;
   }
-  .image_longchamp{ grid-area: 9/2;
-  height: 200px;
-    width: 360px; 
-  
-  }
-  .lonchamp{grid-area: 9/2;
-  
-  }
-
-
-
-
-  
-  footer{width: 815px;
-  height: 230px;
-  flex-wrap: wrap;
-  margin-top:70px;
-  }
-  .p_1,.p_2{margin-left: 10px;
-  
-  }
-  .h_2,.h_3{ margin-left: 30px;
-  
-  }
-  .a_3,.a_4{margin-left: 50px;
-  
-  }
-  
-  }
-  @media only screen and (min-width: 871px) and (max-width:1100px){
-       
-
- 
-    .wapper{width: 1100px;
-      margin: auto;
-      height: auto;
-
-
-    }
-
-    body{max-width:auto;
-    }
-
-    header{ width: 1100px;
-    }
-    
-      .housing{ grid-area: 1/3;
-      
-      
-      } 
-      
-      .activity{ grid-area: 1/4;
-   
-      
-      }
-      .register{  grid-area :1/5;
-     
-      }  
-     
-      .headernav{ 
-        width: 1100px;
-        height:250px;
-     flex-wrap: wrap;
-    
-      }
-
-      .i_f_o{display: flex;
-               margin-top: -8rem;
-   
-      
-
-       
-    
-       
-       
-     
-       }
-    .populaire{ display:inline-grid;
-      margin-left: -22.7rem;
-      margin-top:-52rem; 
-      width:1000px;
-   
-      }
-    
-    
-     
-      .lesplus{ width: 350px;
-        height: 50px; 
-        font-weight: 800; 
-       margin-top: 8px;
-  
-      }
-      .anchor{ display:flex;
-        width: 30px;
-        height: 30px;
-        grid-area: 1/2;
-      margin-left:50rem; 
-      background-color:#F2F2F2 ;    
-      
-      }
-      section{ 
-        height:700px;
-        width: 1000px;
-        grid-template-columns:312px 312px 312px;
-        column-gap:  2rem;
-        grid-template-rows: 50px 1fr 30px  1fr 50px;
-        margin-top: 52rem;
-      }
-      .sectiondumatin{width:980px;
-      
-      }
-      
-      .section_eau{width: 980px;
-      }
-      
-      .eau_2{width: 300px;
-      contain: content;                 
-      }
-
-      .hotel_eau{margin-left: 350px;
-        margin-top: -200px;
-      }
-              
-      .nuit_eau{margin-left: 350px;
-      
-      }
-      .star_eau{width: 150px;
-        height: 40px;  
-       margin-left: 350px;
-      margin-top:50px;
-
-      }
-
-
-      .section_bleu{width: 980px;
-      }
-        
-      .bleu{width: 300px;
-        display: flex;                    
-         contain: content;
-      }
-           
-     
-      
-      
-      
-      
-      
-      
-      .hotel_bleu{margin-left: 350px;
-          border-top-left-radius:  20px;
-      
-          
-      }
-      
-     
-     .nuit_bleu{ margin-left:350px;
-                                                           
-     }
-     .star_bleu{width: 150px;
-       height: 40px;  
-      margin-left: 350px;
-     margin-top:50px;
-       }
-
-
-      .matin{ width: 300px;
-        border-top-left-radius: 20px;
-        contain: content;
-      }
-      .soleil{ 
-        margin-left:350px;
-        margin-top:-200px;
-        
-        }  /*paragraphe*/
-        .nuitsoleil{margin-left: 350px;
-          
-        }
-        .starmatin{width: 150px;
-          height: 40px;  
-         margin-left: 350px;
-        margin-top:50px; 
-        }
-      .sectionmouettes{ grid-area: 4/3;
-     
-      width: 300px;
-      contain: content;
-      }
-      .hotelmouettes{
-        width: 300px; 
-      }
-      
-.sectionlamer{grid-area: 4/1;
-  
-}
-
-.sectionpanier{grid-area: 4/2;
-
-}
-      .sectionamina{ 
-       grid-area: 2/3;
-      width: 300px;
-      
-      }
-      .hotelamina{display: flex;
-      width: 300px;
-      }
-      .sectioncannebiere,.auberge{
-        width: 300px;
-      } 
-      .sectionport,.hotelport{ width: 300px;
-      
-      }
-      
-      .sectionlamer,.hotelamer{ width: 300px;
-        
-      }
-      .sectionpanier,.aubergepanier{ width: 300px;
-      }
-    aside{grid-area: 50/1;
-    
-    }
-      
-     article{
-    
-        width: 1050px;
-        height: 610px;
-        grid-template-columns: 250px  240px  250px  240px;   
-       background-color: #fff;
-        grid-template-rows: 50px 200px 30px 30px 200px 50px;
-        margin-left:5px ;
-     }
-      .a_m{font: size 12px;
-        margin-left: 10px;
-    flex-wrap: nowrap;
-          
-      }
-      
-      .c_1{ 
-        width: 250px;
-       grid-area: 2/1; 
-       box-shadow:3px 3px 5px 6px #f1f1f1; 
-    
-       height: 510px;
-     
-      }
-      .image_port{ width: 250px;
-        border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-     height: 460px;
-  
-     
-   
-    
-      
-      }
-      .c_4{
-        grid-area: 5/2;
-        width:250px;
-        height: 510px;
-    
-        box-shadow:3px 3px 5px 6px #f1f1f1;
-      
-     
-    
-      }
-      .image_calanque{
-        height: 460px;
-     
-        width: 250px;
-      border-top-left-radius: 20px;
-      }
-      .parc{
-       display: inline-grid;
-       margin-top:3px;
-      }
-      
-      .c_2{
-      
-      grid-area: 2/2;
-     contain: size;
-      height: 250px;
-     width: 240px;
-      box-shadow:3px 3px 5px 6px #f1f1f1;
-    
-     
-      border-radius: 20px;
-      }
-      .image_fort{width: 240px;
-     display:inline-grid;
+  .image_longchamp {
+    grid-area: 9/2;
     height: 200px;
-    
-      }
-      .pomegue{ 
-      display:grid;
-    
-      }
-      
-      .c_3{
-      height: 240px;
-      width: 240px;
-      box-shadow:3px 3px 5px 6px #f1f1f1;
-      contain: size;
-   
-         display: inline-grid;
-      }
-      .image_frioul{ width: 240px;
-        height: 190px;
-        grid-area: 5/2;
-        contain: content;
-    
-      }
-      .frioul{ grid-area: 6/2;  
-        display: inline-grid;    
-  
-      }
-      .c_5{ 
-    
-      width: 250px;
-      margin-top:50px;
-      contain: size;
-    
-      }
-      
-      .image_dame{
-        width: 250px;
-       height: 200px;
-      }
-      .notre{margin-left: 2px;
+    width: 360px;
+  }
+  .lonchamp {
+    grid-area: 9/2;
+  }
 
-      }
-      
-      .c_6{
-       margin-top: 10px;
-        width: 250px;
-        grid-area: 5/4;
-   
-     
-      height: 240px;
-      }
-      .image_longchamp{ grid-area: 5/4;
-      height: 190px;
-        width: 250px; 
-   
-      }
-      .lonchamp{grid-area: 9/2;
-      
-      }
-    
-    
-    
-    
-      
-      footer{width: 1050px;
-      height: 200px;
-      flex-wrap: wrap;
-      margin-top:40px;
-      }
-      .p_1,.p_2{margin-left: 10px;
-      
-      }
-      .h_2,.h_3{ margin-left: 30px;
-      
-      }
-      .a_3,.a_4{margin-left: 50px;
-      
-      }
+  footer {
+    width: 815px;
+    height: 230px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+  }
+  .p_1,
+  .p_2 {
+    margin-left: 10px;
+  }
+  .h_2,
+  .h_3 {
+    margin-left: 30px;
+  }
+  .a_3,
+  .a_4 {
+    margin-left: 50px;
+  }
+}
+@media only screen and (min-width: 871px) and (max-width: 1100px) {
+  .wapper {
+    width: 1100px;
+    margin: auto;
+    height: 2875px;
+  }
 
-    }
+  body {
+    max-width: auto;
+  }
+
+  header {
+    width: 1100px;
+  }
+
+  .housing {
+    grid-area: 1/3;
+  }
+
+  .activity {
+    grid-area: 1/4;
+  }
+  .register {
+    grid-area: 1/5;
+  }
+
+  .headernav {
+    width: 1100px;
+    height: 250px;
+    flex-wrap: wrap;
+  }
+
+  .i_f_o {
+    display: flex;
+    margin-top: -8rem;
+  }
+  .populaire {
+    display: inline-grid;
+    margin-left: -22.7rem;
+    margin-top: -52rem;
+    width: 1000px;
+  }
+
+  .lesplus {
+    width: 350px;
+    height: 50px;
+    font-weight: 800;
+    margin-top: 8px;
+  }
+  .anchor {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    grid-area: 1/2;
+    margin-left: 50rem;
+    background-color: #f2f2f2;
+  }
+  section {
+    height: 700px;
+    width: 1000px;
+    grid-template-columns: 312px 312px 312px;
+    column-gap: 2rem;
+    grid-template-rows: 50px 1fr 30px 1fr 50px;
+    margin-top: 52rem;
+  }
+  .sectiondumatin {
+    width: 980px;
+  }
+
+  .section_eau {
+    width: 980px;
+  }
+
+  .eau_2 {
+    width: 300px;
+    contain: content;
+  }
+
+  .hotel_eau {
+    margin-left: 350px;
+    margin-top: -200px;
+  }
+
+  .nuit_eau {
+    margin-left: 350px;
+  }
+  .star_eau {
+    width: 150px;
+    height: 40px;
+    margin-left: 350px;
+    margin-top: 50px;
+  }
+
+  .section_bleu {
+    width: 980px;
+  }
+
+  .bleu {
+    width: 300px;
+    display: flex;
+    contain: content;
+  }
+
+  .hotel_bleu {
+    margin-left: 350px;
+    border-top-left-radius: 20px;
+  }
+
+  .nuit_bleu {
+    margin-left: 350px;
+  }
+  .star_bleu {
+    width: 150px;
+    height: 40px;
+    margin-left: 350px;
+    margin-top: 50px;
+  }
+
+  .matin {
+    width: 300px;
+    border-top-left-radius: 20px;
+    contain: content;
+  }
+  .soleil {
+    margin-left: 350px;
+    margin-top: -200px;
+  } /*paragraphe*/
+  .nuitsoleil {
+    margin-left: 350px;
+  }
+  .starmatin {
+    width: 150px;
+    height: 40px;
+    margin-left: 350px;
+    margin-top: 50px;
+  }
+  .sectionmouettes {
+    grid-area: 4/3;
+
+    width: 300px;
+    contain: content;
+  }
+  .hotelmouettes {
+    width: 300px;
+  }
+
+  .sectionlamer {
+    grid-area: 4/1;
+  }
+
+  .sectionpanier {
+    grid-area: 4/2;
+  }
+  .sectionamina {
+    grid-area: 2/3;
+    width: 300px;
+  }
+  .hotelamina {
+    display: flex;
+    width: 300px;
+  }
+  .sectioncannebiere,
+  .auberge {
+    width: 300px;
+  }
+  .sectionport,
+  .hotelport {
+    width: 300px;
+  }
+
+  .sectionlamer,
+  .hotelamer {
+    width: 300px;
+  }
+  .sectionpanier,
+  .aubergepanier {
+    width: 300px;
+  }
+  aside {
+    grid-area: 50/1;
+  }
+
+  article {
+    width: 1050px;
+    height: 610px;
+    grid-template-columns: 250px 240px 250px 240px;
+    background-color: #fff;
+    grid-template-rows: 50px 200px 30px 30px 200px 50px;
+    margin-left: 5px;
+  }
+  .a_m {
+    font: size 12px;
+    margin-left: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .c_1 {
+    width: 250px;
+    grid-area: 2/1;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+
+    height: 510px;
+  }
+  .image_port {
+    width: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 460px;
+  }
+  .c_4 {
+    grid-area: 5/2;
+    width: 250px;
+    height: 510px;
+
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+  }
+  .image_calanque {
+    height: 460px;
+
+    width: 250px;
+    border-top-left-radius: 20px;
+  }
+  .parc {
+    display: inline-grid;
+    margin-top: 3px;
+  }
+
+  .c_2 {
+    grid-area: 2/2;
+    contain: size;
+    height: 250px;
+    width: 240px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+
+    border-radius: 20px;
+  }
+  .image_fort {
+    width: 240px;
+    display: inline-grid;
+    height: 200px;
+  }
+  .pomegue {
+    display: grid;
+  }
+
+  .c_3 {
+    height: 240px;
+    width: 240px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    contain: size;
+
+    display: inline-grid;
+  }
+  .image_frioul {
+    width: 240px;
+    height: 190px;
+    grid-area: 5/2;
+    contain: content;
+  }
+  .frioul {
+    grid-area: 6/2;
+    display: inline-grid;
+  }
+  .c_5 {
+    width: 250px;
+    margin-top: 50px;
+    contain: size;
+  }
+
+  .image_dame {
+    width: 250px;
+    height: 200px;
+  }
+  .notre {
+    margin-left: 2px;
+  }
+
+  .c_6 {
+    margin-top: 10px;
+    width: 250px;
+    grid-area: 5/4;
+
+    height: 240px;
+  }
+  .image_longchamp {
+    grid-area: 5/4;
+    height: 190px;
+    width: 250px;
+  }
+  .lonchamp {
+    grid-area: 9/2;
+  }
+
+  footer {
+    width: 1050px;
+    height: 200px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .p_1,
+  .p_2 {
+    margin-left: 10px;
+  }
+  .h_2,
+  .h_3 {
+    margin-left: 30px;
+  }
+  .a_3,
+  .a_4 {
+    margin-left: 50px;
+  }
+} 
