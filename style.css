@@ -272,9 +272,7 @@ margin-left: 10px;
                                                  
 
 .headernav :hover{
-
-
-
+cursor: pointer;
 color: #0065FC;
   
  
@@ -588,8 +586,8 @@ border-radius: 20px;
 
 
  }
- article:hover{ transform:scale(1.020);
-
+ article a:hover{ transform:scale(1.015);
+   transition-duration: 4s;
  }
  
  .c_1 {
