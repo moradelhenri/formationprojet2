@@ -728,8 +728,8 @@ article a:hover {
 }
 .c_6 {
   width: 288px;
-  height: 250px;
-  margin-top: -10px;
+  height: 230px;
+  margin-top: 10px;
   border-radius: 20px;
   grid-area: 6/4;
 
@@ -779,8 +779,7 @@ a {
 @media only screen and (min-width: 200px) and (max-width: 379px) {
   .wapper {
     width: 379px;
-    height:5953px;
-    margin: auto;
+    height:auto;
   }
 
   body {
@@ -1115,14 +1114,14 @@ a {
     width: 300px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
 
-    margin-top: 15px;
+    margin-top: -10px;
   }
 
   .c_3 {
     height: 280px;
     width: 300px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 20px;  
     grid-area: 9/1;
     margin-left: 10px;
@@ -1145,7 +1144,7 @@ a {
     height: 280px;
     width: 300px;
     display: grid;
-    margin-top: 60px;
+    margin-top: 20px;
     grid-area: 13/1;
     margin-left: 20px;
   }
@@ -1165,7 +1164,7 @@ a {
     width: 300px;
     grid-area: 16/1;
     margin-left: 20px;
-    margin-top: 65px;
+    margin-top: 20px;
   
   }
   .image_dame {
@@ -1182,7 +1181,7 @@ a {
     height: 280px;
     width: 300px;
     grid-area: 19/1;
-  margin-top: 15px;
+  margin-top:-30px;
     margin-left: 20px;
   }
 
@@ -1209,7 +1208,7 @@ a {
   }
 
   footer {
-    margin-top: 30px;
+    margin-top:-10px;
     grid-template-columns: 300px;
     grid-template-rows: 200px 150px 150px;
     width: 330px;
@@ -1537,8 +1536,7 @@ a {
     height: 280px;
     width: 350px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
-  margin-top: 15px;
- 
+        margin-top: -10px;
 
   }
 
@@ -1546,7 +1544,7 @@ a {
     height: 280px;
     width: 350px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
- margin-top: 60px;
+ margin-top: 30px;
     border-radius: 20px;
  
     grid-area: 9/1;
@@ -1570,7 +1568,7 @@ a {
     height: 280px;
     width: 350px;
     display: grid;
-  margin-top:-20px;
+ margin-top: -155px;
     grid-area: 13/1;
 
     margin-left: 20px;
@@ -1591,7 +1589,7 @@ a {
     width: 350px;
     grid-area: 16/1;
     margin-left: 20px;
-   margin-top: 15px;
+   margin-top:-200px;
   }
   .image_dame {
     width: 350px;
@@ -1606,7 +1604,7 @@ a {
   .c_6 {
     height: 280px;
     width: 350px;
-margin-top:-90px;
+margin-top:-300px;
     grid-area: 23/1;
 
     margin-left: 20px;
@@ -1635,7 +1633,7 @@ margin-top:-90px;
   }
 
   footer {
-    margin-top: 13rem;
+   margin-top: 5px;
     grid-template-columns: 400px;
     grid-template-rows: 200px 150px 150px;
     width: 400px;
@@ -1898,9 +1896,10 @@ margin-top:-90px;
 
   .c_6 {
     width: 320px;
+    height: 250px;
    
     grid-area: 9/2;
-    margin-top:-15.6rem;
+    margin-top:-16.5rem;
    
   }
   .image_longchamp {
@@ -2171,7 +2170,7 @@ margin-top:-90px;
     width: 360px;
     grid-area: 9/2;
   margin-left: 15px;
-    margin-top: -16.5rem;
+    margin-top: -18.7rem;
     height: 265px;
   }
   .image_longchamp {
