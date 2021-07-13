@@ -39,9 +39,9 @@ header {
   margin-top: 10px;
 }
 
-.housing:hover {
+.housing a:hover {
   color: #0065fc;
-  text-decoration: overline;
+  border-top: 3px solid#0065fc;
 }
 .activity {
   grid-area: 1/5;
@@ -49,9 +49,9 @@ header {
   margin-top: 10px;
   font-size: 20px;
 }
-.activity:hover {
+.activity a:hover {
   color: #0065fc;
-  text-decoration: overline;
+  border-top: 3px solid#0065fc;
 }
 
 .register {
@@ -148,6 +148,7 @@ form {
   border-radius: 2rem;
   background-color: #deebff;
   float: inline-end;
+  contain: paint;
 }
 .eco {
   border: 2px solid #d9d9d9;
@@ -169,6 +170,7 @@ form {
   padding-top: 10px;
   border-radius: 2rem;
   background-color: #deebff;
+  contain: paint;
 }
 
 .everybody {
@@ -192,6 +194,7 @@ form {
   padding-top: 10px;
   border-radius: 2rem;
   background-color: #deebff;
+  contain: paint;
 }
 
 .romantic {
@@ -215,6 +218,7 @@ form {
   border-radius: 2rem;
   flex-wrap: wrap;
   background-color: #deebff;
+  contain: paint;
 }
 .animals {
   border: 2px solid #d9d9d9;
@@ -253,7 +257,7 @@ form {
 
 .headernav :hover {
   cursor: pointer;
-  color: #0065fc;
+ background-color: #0065fc;
 
   font: bold;
 }
@@ -775,7 +779,7 @@ a {
 @media only screen and (min-width: 200px) and (max-width: 379px) {
   .wapper {
     width: 379px;
-    height:5923px;
+    height:5953px;
     margin: auto;
   }
 
@@ -1101,6 +1105,8 @@ a {
     box-shadow: 3px 3px 5px 6px #f1f1f1;
     margin-left: 20px;
     border-radius: 20px;
+ 
+  
   }
 
   .c_2 {
@@ -1109,16 +1115,15 @@ a {
     width: 300px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
 
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .c_3 {
     height: 280px;
     width: 300px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
-    margin-top: 25px;
-    border-radius: 20px;
-
+    margin-top: 30px;
+    border-radius: 20px;  
     grid-area: 9/1;
     margin-left: 10px;
   }
@@ -1140,9 +1145,8 @@ a {
     height: 280px;
     width: 300px;
     display: grid;
-    margin-top: 45px;
+    margin-top: 60px;
     grid-area: 13/1;
-
     margin-left: 20px;
   }
   .image_calanque {
@@ -1161,13 +1165,15 @@ a {
     width: 300px;
     grid-area: 16/1;
     margin-left: 20px;
+    margin-top: 65px;
+  
   }
   .image_dame {
     width: 300px;
     height: 200px;
     contain: content;
     grid-area: 16/1;
-    margin-top: -20px;
+   margin-top:-20px;
   }
   .notre {
     grid-area: 19/1;
@@ -1175,9 +1181,8 @@ a {
   .c_6 {
     height: 280px;
     width: 300px;
-
     grid-area: 19/1;
-    margin-top: -12px;
+  margin-top: 15px;
     margin-left: 20px;
   }
 
@@ -1189,7 +1194,7 @@ a {
   }
   .lonchamp {
     grid-area: 23/1;
-    margin-top: 30px;
+    margin-top:50px;
   }
   .column_2 {
     margin-left: 10px;
@@ -1225,7 +1230,7 @@ a {
 @media only screen and (min-width: 380px) and (max-width: 480px) {
   .wapper {
     width: 480px;
-    height:5933px;
+  height: auto;
     margin: auto;
   }
 
@@ -1493,7 +1498,7 @@ a {
 
   .a_m {
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .image_fort {
     grid-area: 6/1;
@@ -1504,6 +1509,7 @@ a {
     border-top-right-radius: 20px;
     display: flex;
     margin-top: -33px;
+
   }
 
   .v_1 {
@@ -1531,16 +1537,18 @@ a {
     height: 280px;
     width: 350px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
-    margin-top: -5px;
+  margin-top: 15px;
+ 
+
   }
 
   .c_3 {
     height: 280px;
     width: 350px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
-    margin-top: 30px;
+ margin-top: 60px;
     border-radius: 20px;
-
+ 
     grid-area: 9/1;
     margin-left: 10px;
   }
@@ -1562,7 +1570,7 @@ a {
     height: 280px;
     width: 350px;
     display: grid;
-    margin-top: 45px;
+  margin-top:-20px;
     grid-area: 13/1;
 
     margin-left: 20px;
@@ -1583,6 +1591,7 @@ a {
     width: 350px;
     grid-area: 16/1;
     margin-left: 20px;
+   margin-top: 15px;
   }
   .image_dame {
     width: 350px;
@@ -1597,9 +1606,9 @@ a {
   .c_6 {
     height: 280px;
     width: 350px;
+margin-top:-90px;
+    grid-area: 23/1;
 
-    grid-area: 19/1;
-    margin-top: -12px;
     margin-left: 20px;
   }
 
@@ -1607,7 +1616,7 @@ a {
     width: 350px;
     height: 200px;
     contain: content;
-    grid-area: 19/1;
+    grid-area: 23/1;
   }
   .lonchamp {
     grid-area: 23/1;
@@ -1618,15 +1627,15 @@ a {
     grid-area: 6/1;
   }
   .column_3 {
-    grid-area: 13/1;
+    grid-area: 14/1;
   }
-  .column_4 {
-    grid-area: 15/1;
+  .column_4 { 
+    grid-area: 17/1;
     margin-top: 65px;
   }
 
   footer {
-    margin-top: 30px;
+    margin-top: 13rem;
     grid-template-columns: 400px;
     grid-template-rows: 200px 150px 150px;
     width: 400px;
@@ -1648,9 +1657,8 @@ a {
   .wapper {
     width: 720px;
     margin: auto;
-    height: 3887px;
+    height: auto;
   }
-
   body {
     width: 100%;
     background-size: auto;
@@ -1692,6 +1700,12 @@ a {
     margin-left: -21.5rem;
     margin-top: -51rem;
     width: 620px;
+    padding-left: 28px;
+  }
+
+  .a_m {margin-left:30px;
+ 
+
   }
 
   .eau_2,
@@ -1727,7 +1741,7 @@ a {
     width: 30px;
     height: 30px;
     grid-area: 1/2;
-    margin-left: 27em;
+    margin-left: 25rem;
     background-color: #f2f2f2;
   }
   section {
@@ -1817,10 +1831,11 @@ a {
   .c_4 {
     grid-area: 8/1;
     width: 320px;
-    height: 530px;
+    height: 550px;
     margin-top: 30px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
     background-color: #fff;
+ 
   }
   .image_calanque {
     height: 480px;
@@ -1852,28 +1867,41 @@ a {
     margin-top: 30px;
     width: 320px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
+
   }
   .image_frioul {
     width: 320px;
     height: 200px;
     margin-top: -5px;
-    contain: content;
+    contain: content;   
+
   }
-  .c_5 {
-    display: iline-grid;
+  .frioul{ margin-top: 10px;
+
+ 
+
+  }
+  .c_5 {margin-top: 30px;
+   
     width: 320px;
-    margin-top: 30px;
+  
+ 
+
   }
 
   .image_dame {
     width: 320px;
+   
+   
+    contain: content;
   }
 
   .c_6 {
     width: 320px;
+   
     grid-area: 9/2;
-
-    margin-top: -17.2rem;
+    margin-top:-15.6rem;
+   
   }
   .image_longchamp {
     grid-area: 9/2;
@@ -1882,6 +1910,7 @@ a {
   }
   .lonchamp {
     grid-area: 9/2;
+    margin-top: 20px;
   }
 
   footer {
@@ -1906,7 +1935,7 @@ a {
 @media only screen and (min-width: 721px) and (max-width: 870px) {
   .wapper {
     width: 870px;
-    height: 3923px;
+    height: auto;
     margin: auto;
   }
 
@@ -1943,8 +1972,10 @@ a {
   .populaire {
     display: inline-grid;
     margin-left: -25.5rem;
-    margin-top: -52rem;
+    margin-top:-55rem;
     width: 770px;
+    padding-bottom: 50px;
+  
   }
 
   .eau_2,
@@ -1985,8 +2016,8 @@ a {
     margin-left: 35rem;
     background-color: #f2f2f2;
   }
-  section {
-    margin-top: 52rem;
+  section {margin-top: 900px;
+   
     height: 1030px;
     width: 770px;
     grid-template-columns: 360px 360px;
@@ -2044,13 +2075,16 @@ a {
   }
 
   article {
-    height: 1180px;
+    height: 1220px;
     width: 815px;
     grid-template-columns: 380px 380px;
-    margin-top: 30px;
+    margin-top: 50px;
+    box-shadow: 3px 3px 5px 6px #f1f1f1;
+    padding-top: 40px;
   }
   .a_m {
     margin-left: 20px;
+    margin-top:-15px;
   }
 
   .c_1 {
@@ -2059,6 +2093,7 @@ a {
     box-shadow: 3px 3px 5px 6px #f1f1f1;
     margin-left: 20px;
     height: 535px;
+    margin-top: 15px;
   }
   .image_port {
     width: 360px;
@@ -2075,8 +2110,8 @@ a {
   .c_4 {
     grid-area: 8/1;
     width: 360px;
-    height: 530px;
-    margin-top: 30px;
+    height: 540px;
+    margin-top:40px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
     background-color: #fff;
 
@@ -2093,12 +2128,13 @@ a {
   }
 
   .c_2 {
-    margin-top: 100px;
+    margin-top:45px;
     grid-area: 1/2;
-    margin-top: 50px;
+  
     height: 270px;
     width: 360px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
+    margin-left:15px;
   }
   .image_fort {
     width: 360px;
@@ -2109,9 +2145,10 @@ a {
 
   .c_3 {
     height: 245px;
-    margin-top: 20px;
+    margin-top: 25px;
     width: 360px;
     box-shadow: 3px 3px 5px 6px #f1f1f1;
+    margin-left: 15px;
   }
   .image_frioul {
     width: 360px;
@@ -2122,7 +2159,8 @@ a {
   .c_5 {
     display: iline-grid;
     width: 360px;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-left: 15px;
   }
 
   .image_dame {
@@ -2132,14 +2170,15 @@ a {
   .c_6 {
     width: 360px;
     grid-area: 9/2;
-
-    margin-top: -17.8rem;
-    height: 260px;
+  margin-left: 15px;
+    margin-top: -16.5rem;
+    height: 265px;
   }
   .image_longchamp {
     grid-area: 9/2;
     height: 200px;
     width: 360px;
+    margin-top: -5px;
   }
   .lonchamp {
     grid-area: 9/2;
@@ -2168,7 +2207,7 @@ a {
   .wapper {
     width: 1100px;
     margin: auto;
-    height: 2875px;
+    height: auto;
   }
 
   body {
@@ -2203,8 +2242,9 @@ a {
   .populaire {
     display: inline-grid;
     margin-left: -22.7rem;
-    margin-top: -52rem;
+    margin-top: -56rem;
     width: 1000px;
+    padding-bottom:60px;
   }
 
   .lesplus {
@@ -2227,7 +2267,7 @@ a {
     grid-template-columns: 312px 312px 312px;
     column-gap: 2rem;
     grid-template-rows: 50px 1fr 30px 1fr 50px;
-    margin-top: 52rem;
+    margin-top: 57rem;
   }
   .sectiondumatin {
     width: 980px;
@@ -2442,16 +2482,18 @@ a {
   }
 
   .c_6 {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 250px;
     grid-area: 5/4;
-
-    height: 240px;
+   
+    height: 220px;
   }
   .image_longchamp {
     grid-area: 5/4;
     height: 190px;
     width: 250px;
+    contain: content;
+ 
   }
   .lonchamp {
     grid-area: 9/2;
