@@ -4,7 +4,6 @@
 }
 .wapper {
  width: 1440px;
- height: 2125.0;
  margin: auto;
 }
 
@@ -122,7 +121,7 @@ form {
 } /*icone réprésentant une goutte*/
 .eau {
  border-bottom-left-radius: 17px;
- border: 2px solid #d9d9d9;
+ 
  margin-right: -2px;
  padding-top: 6px;
  border-top-left-radius: 17px;
@@ -662,7 +661,7 @@ article a:hover {
 /*column_2*/
 .image_fort {
  width: 285px;
- height:220px;
+ height:180px;
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
  contain: content;
@@ -685,7 +684,7 @@ article a:hover {
  display: inline-grid;
 }
 .image_frioul {
- height: 220px;
+ height:220px;
  width: 285px;
  contain: content;
  border-top-left-radius: 20px;
@@ -854,12 +853,12 @@ a {
  form {
    margin-left: -19rem;
    margin-top: 140px;
-   border-color:2px #d9d9d9;
+   border:2px solid #d9d9d9;
  }
 
  .eau {
    padding-top: 6px;
-   padding-bottom: -1px;
+  
  }
  #plan {
    display: none;
@@ -934,7 +933,7 @@ a {
    margin-left: 5px;
 
    padding-left: 10px;
-   padding-right: -15px;
+
    width: 30px;
  }
  .i_f_o {
@@ -1311,7 +1310,7 @@ a {
  form {
    margin-left: -25rem;
    margin-top: 140px;
-   border-color: 2px #d9d9d9;
+   border: 2px #d9d9d9;
  }
 
  .eau {
@@ -2439,7 +2438,7 @@ margin-top:-300px;
    margin-left: 5px;
  }
  .a_m {
-   font-size:12px;
+   font: size 22px;
    margin-left: 10px;
    flex-wrap: nowrap;
  }
