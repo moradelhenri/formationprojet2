@@ -2438,7 +2438,7 @@ margin-top:-300px;
    margin-left: 5px;
  }
  .a_m {
-   font: size 22px;
+   font-size: 22px;
    margin-left: 10px;
    flex-wrap: nowrap;
  }
