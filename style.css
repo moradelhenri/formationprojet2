@@ -8,7 +8,8 @@
 }
 
 body {
- min-width: auto;
+  overflow-x:hidden;
+   min-width: auto;
 
  height: 100vh;
  margin: 0;
@@ -794,14 +795,17 @@ a {
  color: black;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 379px) {
+@media only screen and (min-width: 200px) and (max-width:379px){
  .wapper {
    width: 379px;
-   height:auto;
+   height:5883px;
+ 
+  margin: auto;
  }
 
  body {
-   width: auto;
+  
+   overflow-y:auto;
  }
  header {
    min-width: 300px;
@@ -851,14 +855,15 @@ a {
  }
 
  form {
-   margin-left: -19rem;
+   margin-left: -18rem;
    margin-top: 140px;
-   border:2px solid #d9d9d9;
+   border:2px #d9d9d9;
+  
  }
 
  .eau {
    padding-top: 6px;
-  
+   
  }
  #plan {
    display: none;
@@ -871,7 +876,7 @@ a {
    padding-top: 6px;
    padding-bottom: 1px;
    border-radius: 5px;
-   margin-left: -5px;
+
    background-color: #0065fc;
    padding-left: 3px;
    padding-right: 2px;
@@ -880,9 +885,10 @@ a {
    width: 300px;
    height: 280px;
    display: grid;
-   margin-left: 10px;
+  margin-left: 15px;
    grid-template-columns: 150px 150px;
    grid-template-rows: 50px 50px 60px 60px 60px;
+
  }
 
  .filters {
@@ -1250,13 +1256,14 @@ a {
 @media only screen and (min-width: 380px) and (max-width: 480px) {
  .wapper {
    width: 480px;
- height: auto;
+ height: 5908px;
    margin: auto;
  }
 
  body {
    width: 100%;
-   overflow: auto;
+ overflow-y: auto;
+  overflow-x:hidden;
  }
 
  header {
@@ -1685,12 +1692,12 @@ margin-top:-300px;
  .wapper {
    width: 720px;
    margin: auto;
-   height: auto;
+   height: 3887px;
  }
  body {
    width: 100%;
    background-size: auto;
-   overflow: auto;
+ overflow-x:hidden;
  }
 
  header {
@@ -1972,7 +1979,7 @@ margin-top:-300px;
 @media only screen and (min-width: 721px) and (max-width: 870px) {
  .wapper {
    width: 870px;
-   height: auto;
+   height: 4091px;
    margin: auto;
  }
 
@@ -2249,12 +2256,18 @@ margin-top:-300px;
  }
 }
 @media only screen and (min-width: 871px) and (max-width: 1100px) {
- .wapper {
+body{  overflow-x:hidden;
+
+}
+
+
+  .wapper {
+
    width: 1100px;
    margin: auto;
-   height: auto;
- }
+   height: 2955px;
 
+ }
  
 
  header {
